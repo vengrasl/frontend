@@ -1,0 +1,66 @@
+h2{
+    color: #872323;
+    text-align: center;
+}
+
+a{
+    color: #1d7667;
+}
+.framelyna{
+    background-color: #0b0b66;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.frabalta{
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.fraraudona{
+    background-color: #ff0000;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.itazalia{
+    background-color: #018a01;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.itabalta{
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border-style: ;
+}
+.itaraudona{
+    background-color: #ff0000;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.linijinis{
+    display: inline;
+}
+
+.kvadratas{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border-color: #ff0000;
+    font-size: 30px;
+}
+
+.blokinis{
+    display: block;
+}
+
+.linijinis-blokinis{
+    display: inline-block;
+}
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 paskaita - HTML įvadas</title>
+    <link rel="icon" href="images/obuolys.png">
+</head>
+<body>
+    <div> <!-- Stilizavimo tag'ai -->
+        <h1>Stilizavimo tagai (linijiniai)</h1>
+        <ul>
+            <li>b - bold - <b>Pastorina</b>  tekstą</li>
+            <li>strong - <strong>Pastorina</strong>tekstą (taip pat atlieka semantinę prasmę) </li>
+            <li>i - Italic - Suteikia tekstui <i> pasvyrimo </i> stilių</li>
+            <li>em - emphasize - Suteikia tekstui <em>pasvyrimo</em> stilių (taip pat atlieka semantinę prasmę)</li>
+            <li>big - <big>Padidina</big> tekstą (pasenęs naudojimas)</li>
+            <li>small - <small>Pamažina</small> tekstą</li>
+            <li>sup - superscript - Pakelia tekstą į viršų ir jį sumažina</li>
+            <li>sub - subscript - Nuleidžia tekstą į apačią ir jį sumažina</li>
+            <li>span - Išskiria kažkokį elementą ar jo dalį</li>
+
+        </ul>
+    
+    </div>
+<div> <!-- Lentelės -->
+    <h1>Lentelės</h1>
+        <ul>
+            <li>table - Lentelė</li>
+            <li>thead - Table Head - Lentelės viršus / pirmoji eilutė</li>
+            <li>tbody - Table body - Lentelės kūnas / duomenys (</li>
+            <li>tfoot - Table Foot - Lentelės apačia / paskutinė eilutė</li>
+            <li>tr - Table Row - Lentelės eilutės</li>
+            <li>th - Table Heading - Lentelės antraštė (stulpelio/eilutės pavadinimas</li>
+            <li>td - Table Data - Lentelės domuo</li>
+                <li>caption - lentelės pavadinimas</li>
+            <li>colgroup - Column Group - Stulpelių grupės</li>
+            <li>col - column - Stulpelis</li>
+        
+        </ul>
+    <table border>
+        <caption align="top">Asmenys</caption>
+        <colgroup>
+        <col span="3" style="background-color: rgb(148, 140, 255);">
+        <col>
+        <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Vardas</th>
+                <th>Amzius</th>
+                <th>Ugis</th>
+                <th>Plauku spalva</th>
+                <th>Akiu spalva</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rokas</td>
+                <td>26</td>
+                <td>180</td>
+                <td rowspan="2"> ruda</td>
+                <td>melyna</td>
+            </tr>
+            <tr>
+                <td>Margarita</td>
+                <td>30</td>
+                <td>191</td>
+                <td>ruda</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border>
+        <caption>lankytinos šalys</caption>
+        <thead>
+            <tr>
+                <th>Eilės numeris</th>
+                <th>Šalis</th>
+                <th>Buvau/nebuvau</th>
+                <th>Paveiksliukas</th>
+                <th>Nuoroda</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>Egiptas</th>
+                <th>Buvau</th>
+                <th><img src="C:\Users\vengr\Desktop\frontend\HTML-CSS\2 paskaita\egiptas.jpg" alt="Egipto piramidziu nuotrauka" width="250px" height="150px"></th>
+                <th><a href="https://lt.wikipedia.org/wiki/Egiptas">Daugiau apie Egpitą</a></th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Yemenas</th>
+                <th>Nebuvau</th>
+                <th><img src="C:\Users\vengr\Desktop\front-end\HTML-CSS\2 paskaita\Yemen.jpg" alt="Yemeno nuotrauka" width="250px" height="150px"></th>
+                <th><a href="https://en.wikipedia.org/wiki/Yemen">Daugiau apie Yemeną</a></th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Pietų Sudanas</th>
+                <th>Nebuvau</th>
+                <th><img src="C:\Users\vengr\Desktop\front-end\HTML-CSS\2 paskaita\psudanas.jpg" alt="Pietų sudano nuotrauka" width="250px" height="150px"></th>
+                <th><a href="https://lt.wikipedia.org/wiki/Piet%C5%B3_Sudanas">Daugiau apie Pietų Sudaną</a></th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Centrinė Afrika</th>
+                <th>Nebuvau</th>
+                <th><img src="C:\Users\vengr\Desktop\front-end\HTML-CSS\2 paskaita\cafrika.jpg" alt="Centrinės Afrikos nuotrauka" width="250px" height="150px"></th>
+                <th><a href="https://lt.wikipedia.org/wiki/Centrin%C4%97_Afrika">Daugiau apie Centrinę Afriką</a></th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div> <!--Formos-->
+    <h1>Formos</h1> 
+    <h3>Tag'ai</h3>
+    <ul>
+        <li>form - Forma</li>
+        <li>input - Įvestis</li>
+        <li>select - Pasirinkimas iš variantų</li>
+        <li>option - Pasirinkimo variantai</li>
+        <li>texterea - Didelio teksto kiekio įvestis</li>
+        <li>label - Etiketė prie įviesties/pasirinkimo</li>
+        <li>optgroup - Pasirinkimo variantų grupė</li>
+        <li>button - Mygtukas</li>
+        <li>fieldset - Formos laukas</li>
+        <li>legend - Formos lauko pavadinimas</li>
+    </ul>
+    <h3>Atributai</h3>
+    <ul>
+        <li>type - Input tag'o tipas</li>
+        <li>for - Nurodo kuriam įvesties/parinkties laukui yra priskirta etiketė (label)</li>
+        <li>id - Unikalus pavadinimas, į kurį nurodo for atributas</li>
+        <li>name - Įvesties lauko vardas, kuris bus perduotas back'ui, kartu su tos įvesties reikšme</li>
+        <li>cols - Stulpelių kiekis texterea elemente</li>
+        <li>rows - Eilučių kiekis texterea elemente</li>
+        <li>placeholder - Tekstas nusakantis ką rašyti įvesties lauke, kuris pradingsta pradėjus rašyti įvesties lauke</li>
+        <li>value - įvesties reikšmė, kuri perduoda back'ui</li>
+        <li>label - Priskiria colgroup'ui pavadinimą</li>
+        <li>selected - Numatytasis select tag'o viduje esantis pasirinkimo variantas</li>
+        <li>minlenght - Trumpiausia galima įvestis</li>
+        <li>maxlenght - Ilgiausia galima įvestis</li>
+        <li>min - Mažiausia leistina įvestis</li>
+        <li>max - Didžiausia leistina įvestis</li>
+        <li>step - Žingsnis, kuriuo didėja/mažėja skaičius</li>
+        <li>pattert - Reikalauja, kad įvesties laukelyje būtų parašytas nurodytas formatas</li>
+        <li>checked - Numatytasis radio arba checkbox pasirinkimas</li>
+    </ul>
+    <form>
+        <div>
+            <h4>Pasirinkite pomėgį</h4>
+            <label for="sportas">Sportas:</label>
+            <input type="checkbox" name="interest" id="sportas" name="sportas" value="sportas" >   
+    </div>
+    <div>
+        <label for="filmai">Filmai:</label>
+        <input type="checkbox" name="interest" id="sportas" name="filmai" value="filmai" >   
+    </div>
+    <div>
+        <label for="kulinarija">Kulinarija:</label>
+        <input type="checkbox" name="interest" id="sportas" name="kulinarija" value="kulinarija" checked>     
+    </div>
+    </form>
+    
+    </div>
+
+    <img src="images\obuolys.jpg" alt="apple logo">
+</body>
+</html>

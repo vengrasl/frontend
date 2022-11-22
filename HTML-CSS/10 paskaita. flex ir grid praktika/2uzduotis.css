@@ -1,0 +1,636 @@
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  border: 2px solid red;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container > div{
+  border: 3px solid black;
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pgrKvadratas1{
+display: grid;
+grid-template-columns: 1fr 5px 1fr 5px 1fr;
+grid-template-rows: 1fr 5px 1fr 5px 1fr;
+}
+
+.pirmas1{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.pirmas2{
+  grid-area: 1 / 3 / 2 / 6;
+}
+.pirmas3{
+  grid-area: 3 / 1 / 4 / 4;
+}
+.pirmas4{
+  grid-area: 3 / 5 / 4 / 6;
+}
+.pirmas5{
+  grid-area: 5 / 1 / 6 / 2;
+}
+.pirmas6{
+  grid-area: 5 / 3 / 6 / 6;
+}
+
+.pgrKvadratas1 > div {
+  background-color: yellowgreen;
+}
+.pgrKvadratas2{
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr;
+}
+.antras1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.antras2 {
+  grid-area: 1 / 3 / 4 / 4;
+}
+.antras3 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.antras4 {
+  grid-area: 3 / 1 / 6 / 2;
+}
+.antras5 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.antras6 {
+  grid-area: 3 / 5 / 6 / 6;
+}
+.pgrKvadratas2 > div {
+  background-color: rgb(26, 11, 96);
+}
+.pgrKvadratas3 {
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr;
+}
+.trecias1 {
+  grid-area: 1 / 1 / 4 / 4;
+}
+.trecias2 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.trecias3 {
+  grid-area: 3 / 5 / 3 / 6;
+}
+.trecias4 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.trecias5 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.trecias6 {
+  grid-area: 5 / 5 / 6 / 6;
+}
+.pgrKvadratas3 > div {
+  background-color: red;
+}
+.pgrKvadratas4 {
+  display: grid;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+}
+.ketvirtas1{
+  grid-area: 1 / 1 / 2 / 4;
+}
+.ketvirtas2 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.ketvirtas3{
+  grid-area: 1 / 7 / 2 / 10;
+}
+.ketvirtas4{
+  grid-area: 3 / 1 / 4 / 2;
+}
+.ketvirtas5{
+  grid-area: 5 / 1 / 6 / 2;
+}
+.ketvirtas6{
+  grid-area: 3 / 3 / 6 / 8;
+}
+.ketvirtas7{
+  grid-area: 3 / 9 / 4 / 10;
+}
+.ketvirtas8{
+  grid-area: 5 / 9 / 6 / 10;
+}
+.ketvirtas9{
+  grid-area: 7 / 1 / 8 / 4;
+}
+.ketvirtas10{
+  grid-area: 7 / 5 / 8 / 6;
+}
+.ketvirtas11 {
+  grid-area: 7 / 7 / 8 / 10;
+}
+.pgrKvadratas4 > div {
+  background-color: rgb(99, 96, 96);
+}
+.pgrKvadratas5 {
+  display: grid;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px  1fr 5px 1fr;
+}
+.penktas1{
+  grid-area: 1 / 1 / 4 / 4;
+}
+.penktas2{
+  grid-area: 1 / 5 / 4 / 12;
+}
+.penktas3{
+  grid-area: 5 / 1 / 8 / 4;
+}
+.penktas4{
+  grid-area: 5 / 5 / 6 / 6;
+}
+.penktas5{
+  grid-area: 5 / 7 / 6 / 8;
+}
+.penktas6{
+  grid-area: 7 / 5 / 7 / 6;
+}
+.penktas7{
+  grid-area: 7 / 7 / 8 / 8;
+}
+.penktas8{
+  grid-area: 5 / 9 / 8 / 12;
+}
+.penktas9{
+  grid-area: 9 / 1 / 12 / 8;
+}
+.penktas10{
+  grid-area: 9 / 9 / 12 / 12;
+}
+.pgrKvadratas5 > div {
+  background-color: rgb(124, 11, 90);
+}
+.pgrKvadratas6 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+.pgrKvadratas6 > div{
+  height: 50%;
+  width: auto;
+}
+.pusediv{
+  display: flex;
+  gap: 5px;
+}
+.pusediv > div{
+  width: 100%;
+}
+.pusespusediv{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  height: 100%;
+}
+.pusespusediv > div{
+  height: 100%;
+}
+.pusespusespusediv{
+display: flex;
+gap: 5px;
+}
+.pusespusespusediv > div {
+  width: 100%;
+}
+.dazyti {
+  background-color: black;
+}
+.pgrKvadratas7{
+  display: grid;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr 5px 1fr;
+}
+.septintas1{
+  grid-area: 1 / 1 / 4 / 6;
+}
+.septintas2{
+  grid-area: 1 / 7 / 2 / 8;
+}
+.septintas3{
+  grid-area: 3 / 7 / 4 / 8;
+}
+.septintas4{
+  grid-area: 5 / 1 / 6 / 2;
+}
+.septintas5{
+  grid-area: 7 / 1 / 8 / 2;
+}
+.septintas6{
+  grid-area: 5 / 3 / 8 / 8;
+}
+.pgrKvadratas7> div {
+  background-color: rgb(32, 106, 141);
+}
+.pgrKvadratas8{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pgrKvadratas8 > div{
+  height: 50%;
+}
+.skaldymas{
+  display: flex;
+  gap: 5px;
+}
+.skaldymas > div{
+  width: 33.3%;
+}
+.suskaldymas{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.suskaldymas > div
+{
+  height: 50%;
+}
+.img {
+  object-fit: fill;
+}
+
+.pgrKvadratas9{
+  display: grid;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+}
+.pgrKvadratas9 > div{
+  background-image: url(./photo-1503249023995-51b0f3778ccf.jpg);
+  background-size: cover;
+}
+.devintas1{
+  grid-area: 1 / 1 / 6 / 4;
+}
+.devintas2{
+  grid-area: 1 / 5 / 2 / 6;
+}
+.devintas3{
+  grid-area: 1 / 7 / 2 / 8;
+}
+.devintas4{
+  grid-area: 1 / 9 / 2 / 10;
+}
+.devintas5 {
+  grid-area: 3 / 5 / 8 / 10;
+}
+.devintas6 {
+  grid-area: 7 / 1 / 8 / 2;
+}
+.devintas7 {
+  grid-area: 7 / 3 / 8 / 4;
+}
+.devintas8 {
+  grid-area: 9 / 1 / 12 / 4;
+}
+.devintas9 {
+  grid-area: 9 / 5 / 12 / 8;
+}
+.devintas10 {
+  grid-area: 9 / 9 / 10 / 10;
+}
+.devintas11 {
+  grid-area: 10 / 9 / 12 / 12;
+}
+
+.pgrKvadratas10{
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+  grid-template-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr;
+}
+.pgrKvadratas10 > div{
+  background-color: brown;
+}
+.desimtas1{
+  grid-area: 1 / 1 / 4 / 6;
+}
+.desimtas2{
+  grid-area: 1 / 7 / 2 / 8;
+}
+.desimtas3{
+  grid-area: 3 / 7 / 4 / 8;
+}
+.desimtas4{
+  grid-area: 5 / 1 / 8 / 4;
+}
+.desimtas5{
+  grid-area: 5 / 5 / 6 / 6;
+}
+.desimtas6{
+  grid-area: 7 / 5 / 8 / 6;
+}
+.desimtas7 {
+  grid-area: 5 / 7 / 8 / 12;
+}
+.desimtas8 {
+  grid-area: 9 / 1 / 12 / 6;
+}
+.desimtas9 {
+  grid-area: 9 / 7 / 10 / 8 ;
+}
+.desimtas10 {
+  grid-area: 11 / 7 / 12 / 8;
+}
+.desimtas11{
+  grid-area: 9 / 9 / 12 / 12;
+}
+.desimtas12{
+  grid-area: 1 / 9 / 4 / 12;
+}
+.pgrKvadratas11{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr 5px) 1fr;
+  grid-template-rows: repeat(4, 1fr 5px) 1fr;
+}
+.vienuoliktas1{
+  grid-area: 1 / 1 / 8 / 10;
+}
+.vienuoliktas2{
+  grid-area: 9 / 1 / 10 / 2;
+}
+.vienuoliktas3{
+  grid-area: 9 / 3 / 10 / 4;
+}
+.vienuoliktas4{
+  grid-area: 9 / 5 / 10 / 6;
+}
+.vienuoliktas5{
+  grid-area: 9 / 7 / 10 / 8;
+}
+.vienuoliktas6{
+  grid-area: 9 / 9 / 10 / 10;
+}
+.pgrKvadratas11 > div{
+  background-color: rgb(158, 102, 29);
+}
+.pgrKvadratas12 {
+  display: flex;
+  gap: 5px;
+}
+.pgrKvadratas12 > div{
+  width: 20%;
+  background-color: rgb(58, 95, 95);
+}
+.pgrKvadratas13{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pgrKvadratas13 > div{
+  height: 20%;
+  background-color: rgb(138, 103, 103);
+}
+.pgrKvadratas14{
+  display: grid;
+  grid-template-rows: repeat(5, 1fr 5px) 1fr;
+  grid-template-columns: repeat(3, 1fr 5px) 1fr;
+}
+.pgrKvadratas14 > div{
+  background-color: rgb(104, 80, 126);
+}
+
+.keturioliktas1{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.keturioliktas2{
+  grid-area: 1 / 3 / 2 / 4;
+}
+.keturioliktas3{
+  grid-area: 1 / 5 / 6 / 6;
+}
+.keturioliktas4{
+  grid-area: 1 / 7 / 2 / 8;
+}
+.keturioliktas5{
+  grid-area: 3 / 7 / -9 / 8;
+}
+.keturioliktas6{
+  grid-area: 5 / 7 / 6 / 8;
+}
+.keturioliktas7{
+  grid-area: 3 / 1 / 6 / 4;
+}
+.keturioliktas8{
+  grid-area: 7 / 1 / 12 / 2;
+}
+.keturioliktas9{
+  grid-area: 7 / 3 / 8 / 4;
+}
+.keturioliktas10{
+  grid-area: 9 / 3 / 10 / 4;
+}
+.keturioliktas11{
+  grid-area: 11 / 3 / 12 / 4;
+}
+.keturioliktas12{
+  grid-area: 7 / 5 / 12 /8;
+}
+.pgrKvadratas15{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr 5px) 1fr;
+  grid-template-columns: repeat(11, 1fr 5px) 1fr;
+}
+.pgrKvadratas15 > div{
+  background-color: rgb(88, 88, 88);
+}
+.penkioliktas1{
+  grid-area: 1 / 1 / 2 / 8;
+}
+.penkioliktas2{
+  grid-area: 1 / 9 / 2 / 16;
+}
+.penkioliktas3{
+  grid-area: 1 / 17 / 2 / 24;
+}
+.penkioliktas4{
+  grid-area: 3 / 1 / 4 / 6;
+}
+.penkioliktas5{
+  grid-area: 3 / 7 / 4 / 12;
+}
+.penkioliktas6{
+  grid-area: 3 / 13 / 4 / 18;
+}
+.penkioliktas7{
+  grid-area: 3 / 19 / 4 / 24;
+}
+.penkioliktas8{
+  grid-area: 5 / 1 / 6 / 8;
+}
+.penkioliktas9{
+  grid-area: 5 / 9 / 6 / 16;
+}
+.penkioliktas10{
+  grid-area: 5 / 17 / 6 / 24;
+}
+.penkioliktas11{
+  grid-area: 7 / 1 / 8 / -19;
+}
+.penkioliktas12{
+  grid-area: 7 / 7 / 8 / 12;
+}
+.penkioliktas13{
+  grid-area: 7 / 13 / 8 / -7;
+}
+.penkioliktas14{
+  grid-area: 7 / -6 / -1 / -1;
+}
+.pgrKvadratas16{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pgrKvadratas16 > div {
+  height: 33.3%;
+}
+.keturidiv{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.keturidiv > div{
+  width: 25%;
+}
+.dardudiv{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.dardudiv > div{
+  height: 50%;
+  background-color: blue;
+}
+.melyna{
+  background-color: blue;
+}
+.pgrKvadratas17{
+  display: flex;
+  gap: 5px;
+}
+.pgrKvadratas17 > div{
+  width: 50%;
+}
+.ketdiv{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ketdiv > div{
+  height: 25%;
+}
+.dalyba {
+  display: flex;
+  gap: 5px;
+}
+.dalyba > div{
+  width: 50%;
+}
+.spalva{
+  background-color: rgb(39, 153, 39);
+}
+.dalyba > div{
+  background-color: rgb(39, 153, 39);
+}
+.pgrKvadratas18{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 5px) 1fr;
+  grid-template-rows: repeat(5, 1fr 5px) 1fr;
+}
+.astonioliktas1{
+  grid-area: 1 / 1 / 4 / 2;
+}
+.astonioliktas2{
+  grid-area: 5 / 1 / 8 / 2;
+}
+.astonioliktas3{
+  grid-area: 9 / 1 / 12 /2;
+}
+.astonioliktas4{
+  grid-area: 1 / 3 / 6 / 4;
+}
+.astonioliktas5{
+  grid-area: 7 / 3 / 12 / 4;
+}
+.astonioliktas6{
+  grid-area: 1 / 5 / 4 / 6;
+}
+.astonioliktas7{
+  grid-area: 5 / 5 / 8 / 6;
+}
+.astonioliktas8{
+  grid-area: 9 / 5 / 12 / 6;
+}
+.pgrKvadratas18 > div{
+  background-color: brown;
+}
+.pgrKvadratas19{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr 5px) 1fr;
+  grid-template-rows: repeat(5, 1fr 5px) 1fr;
+}
+.pgrKvadratas19 > div{
+  background-color: rgb(60, 22, 95);
+}
+.devynioliktas1{
+  grid-area: 1 / 1 / 8 / 8;
+}
+.devynioliktas2{
+  grid-area: 1 / 9 / 4 / 12;
+}
+.devynioliktas3{
+  grid-area: 5 / 9 / 6 / 10;
+}
+.devynioliktas4{
+  grid-area: 5 / 11 / 6 / 12;
+}
+.devynioliktas5{
+  grid-area: 7 / 9 / 8 / 10;
+}
+.devynioliktas6{
+  grid-area: 7 / 11 / 8 / 12;
+}
+.devynioliktas7{
+  grid-area: 9 / 1 / 12 / 4
+}
+.devynioliktas8{
+  grid-area: 9 / 5 / 10 / 6;
+}
+.devynioliktas9{
+  grid-area: 9 / 7 / 10 / 8;
+}
+.devynioliktas10{
+grid-area: 11 / 5 / 12 / 6;
+}
+.devynioliktas11{
+  grid-area: 11 / 7 / 12 / 8;
+}
+.devynioliktas12{
+  grid-area: 9 / 9 / 12 / 12;
+}
+.pgrKvadratas20{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pgrKvadratas20 > div{
+  height: 33.3%;
+  display: flex;
+  gap: 5px;
+}
+.divlast > div{
+  width: 25%;
+  background-color: yellowgreen;
+}

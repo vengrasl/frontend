@@ -1,0 +1,35 @@
+h1{
+  color: rgb(59, 233, 175);
+  font-size: 90px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+h2{
+  color: white;
+  margin: 0px;
+  padding-left: 5px;
+}
+
+p{
+  color: rgb(184, 180, 180);
+  margin: 4px;
+}
+
+.flexbox1 p {
+font-size: 15px;
+font-size: 23px;
+}
+#container{
+  background-color: rgb(25,25,112);
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.flexbox1{
+  padding-left: 55px;
+  padding-bottom: 200px;
+}

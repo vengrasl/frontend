@@ -1,0 +1,221 @@
+body {
+  margin-bottom: 0px;
+}
+.redcrossmain {
+  width: 1000px;
+  height: 500px;
+  display: inline-block;
+  margin-left: 170px;
+}
+.jaunimoprogramaimg, .siltiapsilankymai, .jaunimoprogramaimg, .pes, .administracineveikla, .stipriseima {
+  width: 350px;
+  height: 275px;
+  border: solid red;
+  border-radius: 5px;
+}
+.buttonaid {
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  height: 30px;
+  width: 130px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.buttonaid:hover {
+  opacity: 0.8;
+}
+
+.buttonaid:active {
+    opacity: 0.5;
+}
+
+.maintekstas {
+  font-size: 45px;
+  text-align: center;
+}
+.mainplaciautekstas {
+  font-size: 25px;
+  text-align: justify;
+  line-height: 35px;
+  margin-top: 0%;
+  text-indent: 50px;
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.savanorystebox{
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  margin-left: 75px;
+}
+.savanorystebox:hover {
+  opacity: 0.8;
+  border-bottom: 100%;
+  border-bottom: solid red;
+}
+.savanorystestekstas{
+  width: 350px;
+  text-align: justify;
+}
+.savtext {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 2px solid red;
+}
+.savtextmain {
+  font-size: 22px;
+  text-align: justify;
+  line-height: 35px;
+  margin-top: 0%;
+  text-indent: 50px;
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.savanorboxname {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+nav {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  padding-top: 0px;
+  margin-top: 0px;
+  text-align: right;
+  width: 100%;
+  border-bottom: solid red;
+}
+body, ul {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body ul {
+  padding-right: 50px;
+}
+
+ul li {
+list-style: none;
+display: inline-block;
+line-height: 100px;
+}
+
+ul li a {
+text-decoration: none;
+font-size: 25px;
+color: black;
+padding: 0 15px;
+display: block;
+}
+ul li a:hover {
+  color:red
+}
+
+.download {
+ position: absolute;
+ padding-left: 25px;
+}
+.download:hover {
+  opacity: 0.8;
+}
+.download:active {
+  opacity: 0.5;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+main {
+  margin-top: 115px;
+}
+table {
+  width: 1000px;
+  height: 500px;
+  margin-left: 175px;
+}
+th {
+  text-align: center;
+  font-size: 20px;
+}
+tr {
+  text-align: center;
+  font-size: 15px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+.skyreliutekstas {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 2px solid red;
+}
+footer {
+width: 100%;
+background-color: rgb(125, 10, 10);
+margin-top: 20px;
+margin-bottom: 0px;
+}
+.footerinfo{
+  color: black;
+  text-align: center;
+}
+.footeris {
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.kontaktai {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+.etaeta {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.comment-box{
+  width: 500px;
+  margin-left: 170px;
+}
+.comment-box h2{
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.comment-box input{
+  width: 300px;
+  height: 40px;
+  padding: 0px 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.comment-box textarea{
+  width: 950px;
+  height: 100px;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.komentarai{
+  text-align: center;
+  font-size: 30px;
+}

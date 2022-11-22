@@ -1,0 +1,37 @@
+body{
+  background-color: rgb(255, 255, 255);
+  color: rgb(194, 195, 194);
+}
+section {
+  text-align: center;
+  background-color: rgb(33, 50, 33);
+  width: 50%;
+  margin-left: 200px;
+  padding-bottom: 30px;
+
+}  
+  input{
+display: inline;
+}
+
+label:not(.not) {
+  display: block;
+}
+span {
+  background-color: rgb(192, 11, 128);
+}
+.pilkasfonas{
+  color: solid black;
+  font-weight: bold;
+  background-color: rgb(198, 197, 197);
+  width: unset;
+}
+.submit {
+  background-color: rgb(17, 112, 23);
+  cursor: pointer;
+}
+
+input:required{
+border-color: red ;
+border-left-color: 2px purple ;
+}

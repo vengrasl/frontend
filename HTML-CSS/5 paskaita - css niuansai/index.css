@@ -1,0 +1,17 @@
+#paveldejimas > ul{
+    color: red;
+    font-size: 10px;
+
+    margin-left: 50px;
+    border: 3px solid black;
+
+    list-style-type: square;
+}
+
+section p{
+ color: rgb(38, 0, 255);   
+}
+
+main section p{
+    color: rgb(255, 0, 30);
+}

@@ -1,0 +1,87 @@
+body{
+  background-color: rgb(200, 211, 211);
+}
+h1 {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+
+}
+p {
+  font-size: 13px;
+  margin-left: 20px;
+  margin-bottom: 3.5px;
+  margin-top: 3.5px;
+}
+span {
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+#Container{
+  width: 60%;
+  height: 700px;
+  margin-left: 300px;
+  display: grid;
+  background-color: rgb(200, 211, 211);
+  grid-template-columns: repeat(2, 1fr) 2fr 1fr 10px 1fr 2fr repeat(2, 1fr);
+  grid-template-rows: 0.33fr 1fr 3fr 1fr 0.5fr 1fr 3fr 1fr 0.33fr;
+}
+
+.bookstext{
+grid-area: 3 / 2 / 5 / 4;
+z-index: 1;
+background-color: white;
+opacity: 0.9;
+}
+
+.bookimg{
+  grid-area: 2 / 3 / 4 / 5;
+  background-color: black;
+  background-image: url(./book-img.jpg);
+  background-size: cover;
+}
+.weighttext{
+  grid-area: 3 / 7 / 5 / 9;
+  z-index: 1;
+  background-color: white;
+  opacity: 0.9;
+}
+.weightimg{
+grid-area: 2 / 6 / 4 / 8;
+background-image: url(./diet-img.jpg);
+background-size: cover;
+}
+
+.nutritiontext{
+  grid-area: 7 / 2 / 9 / 4;
+  z-index: 1;
+  background-color: white;
+  opacity: 0.9;
+}
+.foodimg{
+ grid-area: 6 / 3 / 8 / 5;
+ background-image: url(./candy-img.jpg);
+ background-size: cover;
+}
+.runnerstext{
+  grid-area: 7 / 7 / 9 / 9;
+  z-index: 1;
+  background-color: white;
+  opacity: 0.9;
+}
+.runimg{
+  grid-area: 6 / 6 / 8 / 8;
+  background-image: url(./run-img.jpg);
+  background-size: cover;
+  opacity: 1;
+}
+.borderbot {
+  border-bottom: 3px solid black;
+  margin-top: 5px;
+  padding-bottom: 10px;
+
+}
+.continuereading{
+  padding-bottom: 40px;
+}

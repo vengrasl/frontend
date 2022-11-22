@@ -1,0 +1,81 @@
+body {
+  height: 100vh;
+  border: 2.5px solid grey;
+  margin-left: 300px;
+  margin-right: 200px;
+}
+aside{
+  color: rgb(253, 253, 253);
+  background-color: rgb(69, 68, 77);
+  display: inline-block;
+  height: 650px;
+  width: 270px;
+
+  }
+
+.noliststyle{
+list-style: none;
+border-bottom: 1px solid black;
+padding-bottom: 15px;
+margin-right: 20px;
+margin-left: 15px
+}
+ul {
+  line-height: 180%;
+}
+.grey{
+  color: grey;
+}
+.stiliusdu{
+  margin-top: 0px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1.3px solid black;
+
+}
+.stilius{
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+ul li{
+  padding-right: 20px;
+}
+
+.borderis{
+border-bottom: 1px solid black;
+padding-bottom: 15px;
+margin-right: 15px;
+margin-left: 15px
+}
+
+.pozicija {
+  display: inline-block;
+  position: relative;
+  bottom: 540px;
+  width: 500px;
+  margin-left: 20px;
+}
+.pozicijadu{
+  display: inline-block;
+  position: relative;
+  bottom: 540px;
+  margin-left: 50px;
+}
+
+.videodisplay {
+display: inline-block;
+position: relative;
+bottom: 580px;
+margin-left: 270px;
+padding-top: 10px;
+padding-left: 20px;
+padding-right: 24px;
+border-top: 2px solid black;
+}
+
+.thedarkknight{
+  color: grey;
+}

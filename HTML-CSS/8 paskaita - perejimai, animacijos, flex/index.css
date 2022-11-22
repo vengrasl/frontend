@@ -1,0 +1,123 @@
+.kvadratasDidelis{
+  height: 200px;
+  width: 200px;
+  border: 2px dashed black;
+  background-color: aquamarine;
+  margin-left: 200px;
+
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.scale{
+  transform: scale(2, 0.5);
+}
+.rotate{
+  transform: rotateZ(15deg)
+}
+.translate{
+  transform: translate3d(100px, 200px, 50px);
+}
+.skew{
+  transform: skew(50deg, 20deg);
+}
+.kvadratasDidelis:hover{
+  /*transform: scale(0.5) translate(100px, 50px) rotate(150deg);
+  transform-origin: top left;*/
+  width: 800px;
+}
+.animacija {
+ /* animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: pirmaanimacija; */
+  animation: 10s linear infinite pirmaanimacija
+}
+button{
+background-color: blueviolet;
+color: black;
+height: 100px;
+width: 100px;
+}
+button:hover{
+  background-color: brown;
+  color: white;
+  transition-duration: 3s;
+  cursor: pointer;
+}
+
+.remas {
+border: solid 2px black;
+display: block;
+width: 100%;
+height: 800px;
+}
+.headeris {
+ text-align: center;
+ border: solid red 1px;
+
+}
+.main {
+  display:inline-block;
+  border: solid green 1px;
+  width: 300p;
+  margin-top: 30px;
+  margin-top: 0px;
+}
+.straipsnis{
+  display: inline-block;
+  border: solid purple 1px;
+  width: 200px;
+  vertical-align: top;
+}
+.bereiksmis{
+  display: inline-block;
+  border: slategrey solid 2px;
+  width: 150px;
+  vertical-align: top;
+}
+.iki {
+  border: 1px solid black;
+}
+
+.iki:hover
+{
+  color: brown;
+}
+
+.iki:active {
+  color: red;
+  transform: rotate(95deg)
+
+}
+/*felx*/
+.kvadratas {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.flexContainer {
+  height: 500px;
+  border: 5px solid black;
+  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  justify-content: center; /*valdo pgr ašį */
+  align-items: center;
+  gap: 10px 30px;
+}
+
+.order1{
+  order: 1;
+}

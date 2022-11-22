@@ -1,0 +1,17 @@
+table, th, td{
+  border: 1px solid rgb(128, 8, 8);
+  border-collapse: collapse;
+}
+.kitokiafonospalva:first-child {
+  background-color: rgb(83, 86, 85);
+}
+th:nth-child(1), td:nth-child(1) {
+  color: red;
+}
+th:nth-child(5), td:nth-child(5) {
+  color: 
+  red;
+}
+tr:nth-child(even) {
+  background-color: rgb(112, 110, 114);
+}

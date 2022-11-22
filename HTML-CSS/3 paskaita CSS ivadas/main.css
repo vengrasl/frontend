@@ -1,0 +1,121 @@
+body{
+    height: 600vh;
+}
+h2{
+    color: red;
+    letter-spacing: 5px;
+}
+
+.svarbusTekstas{
+    font-size:larger;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.raudonasTekstas{
+    color: red;
+}
+
+#remeliai{
+    border: 3px dashed;
+}
+
+.juodasblokas{
+    background-color: black;
+    border: black;
+    font-size: 100px;
+    width: auto;
+    height: auto;
+}
+
+.zaliasblokas{
+    background-color: green;
+    border: rgb(19, 174, 19);
+    color: green;
+    width: 250px;
+    font-size: 100px;
+}
+
+.geltonasblokas{
+    background-color: yellow;
+    border: yellow;
+    color: yellow;
+    font-size: 100px;
+    width: 250px;
+}
+
+.raudonasblokas{
+    background-color: red;
+    border: red;
+    color:red;
+    font-size: 100px;
+    width: 250px;
+}
+
+.kvadratas{
+    width: 150px;
+    height: 150px;
+    background-color: beige;
+    border: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+}
+.linijinis{
+    display: inline;
+}
+.blokinis{
+    display: block;
+}
+    .linijinisBlokinis{
+        display: inline-block;
+    }
+
+    .linijinisBelgija{
+        display: inline;
+    }
+
+    .blokinisLietuva{
+    display: block;
+    }
+
+    .display_ib{
+        display: inline-block;
+    }
+
+    .t10{
+        top: 10px;
+    }
+    .r30{
+        right: 30px;
+    }
+    .b50{
+        bottom: 50px;
+    }
+
+    .l80{
+        left: 80px;
+    }
+    .z5{
+        z-index: 5;
+    }
+    .z10{
+        z-index: 10;
+    }
+   .static{
+    position: static;
+   }.relative{
+    position: relative;
+   }
+   .absolute{
+    position:absolute;
+   }
+   .fixed{
+    position: fixed;
+   }
+   .static{
+    position: sticky;
+   }
+   .h500{
+    height: 500px;
+   }

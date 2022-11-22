@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo klasės ir elementais</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!--
+    Pseudo klasės ir elementai (selectoriai)
+    Multimedijos elementai (video/audio/maps/iframe)
+    Lentelės su pseudo klasėm/elementais
+    Formos su pseudo klasėm/elementais
+    Animacijos ir perėjimai
+  -->
+  <main>
+    <section id="pseudoselektoriai">
+      <h1>
+       <a href="https://www.w3schools.com/csSref/css_selectors.php" target="blank"> Pseudo selektoriai </a>
+      </h1>
+      <ul>
+        <li>*</li>
+        <li>element</li>
+        <li>.class</li>
+        <li>#ID</li>
+        <li>selector1, selector2</li>
+        <li>selector1 selector2</li>
+        <li>selector1 > selecor2</li>
+        <li>element.class#id - elementas turintis nurodytą klasę arba klases ir nurodytą id</li>
+        <li>selector1 + selector2 - iš karto už selector1 einantis elementas (tame pačiame lygyje)</li>
+        <li>selector1 ~ selector2 - už selecotr1 visi einantys selector2 (tame pačiame lygyje)</li>
+        <li>[atribute] - atributas</li>
+        <li>[atributas=value] - atributas turintis nurodytą reikšmę</li>
+        <li>[atributas~=value] - atributas, kurio reikšmėje yra nurodytas žodis</li>
+        <li>[atributas*=value] - atributas, kurio reikšmėje yra nurodyta žodio dalis</li>
+        <li>[atributas^=value]</li> - atributas, kurio reikšmė prasideda value..
+        <li>[atributas$=value]</li> - atributas, kurio reikšmė pasibaigia value..
+        <li>:active - aktyvi (po paspaudimo) nuoroda</li>
+        <li>:link - paprasta/nelankyta nuoroda</li>
+        <li>:visited - lankyta nuoroda</li>
+        <li>element:emty - tuščias elementas </li>
+        <li>::marker - sąrašo elementų žymės</li>
+        <li>:not(selecotr) - parenka viską, išskyrus nurodytą elementą</li>
+        <li>:first-child - parenka pirmąjį vaikinį elementą</li>
+        <li>:last-child - parenka paskutinį vaikinį elementą</li>
+        <li>:onyl-child - parenka</li>
+        <li>:first-of-type - parenka pirmąjį nurodyto tipo elemetą</li>
+        <li>:last-of-type - perenka paskutinį nurodyto tipo elementą</li>
+        <li>:only-of-type - parenka vienintelį nurodyto tipo elementą</li>
+        <li>:nth-child(n) - parenka nurodytą/us vaikinį/ius elementą/us </li>
+        <li>:nth-last-child(n) - </li> nuo galo parenka nurodytą/us vaikinį/ius elementą/us
+        <li>:nth--typechild(n) - parenka nudodytą/us elementą/us pagal tipą </li>
+        <li>:nth-last-of-type(n) -  parenka nuo galo nurodytą elementą/us pagal tipą</li>
+        <li>::before - sukuria turinį prieš elementą</li>
+        <li>::after - sukuria turinį už elemento</li>
+        <li>input:checked - pažymėtus radio/checkbox/options pasirinkimus</li>
+        <li>input:default - iš anksto prinktas pasirinkimas</li>
+        <li>input:enabled - input'as, kuris turi disabled atributą</li>
+        <li>input:enabled - input'as, kuris turi enablead atributo</li>
+        <li>input:focus - input'as, ant kurio yra paspausta</li>
+        <li>input:in-range - input'as, kurio vertė yra nurodytose ribose</li>
+        <li>input:out-of-range - input'as, kurio vertė yra už nurodytų ribų</li>
+        <li>input:inder - imput'as, kurio reikšmė neapibrėžta</li>
+        <li>input:invalid - input su netinkama verte</li>
+        <li>input:valid - input, kurrio vertė tinkama</li>
+        <li>input:required - input su required atributu</li>
+        <li>input:optional - input be required atributo</li>
+        <li>input:read-only: input su readonly atributu</li>
+        <li>input:read-write - input be readonly atributo</li>
+        <li>input::placeholder - įvesties laukelio placeholder atributo reikšmės parinkimas stilizavimui</li>
+        <li>element::first-letter - parenka elemento pirmąją raidę</li>
+        element::first-line - parenka elemento pirmąją eilutę
+        <li>::selection - parenka vartotojo pažymėtą informaciją</li>
+      </ul>
+      <div class="selektoriuPvz">
+        <p class="rytoTekstas" id="hallo"> labas rytas</p>
+        <p>tekstas</p>
+        <h1>tekstas more</h1>
+        <p>tekstas more and more</p>
+        <h1 class="head">ff</h1>
+        <!--<div>div vidus</div>-->
+        <p>tekstas more and more</p>
+        <p>labas rytas</p>
+      </div>
+
+    </section>
+    <section id="multimedija">
+      <h1>Multimedija</h1>
+      <p>iframe - skirtas įkelti kitos sveitainės dalį arba visą sveitainę į savo svetainę.</p>
+      <div id="video"></div>
+      <iframe width="560" height="360" src="https://www.youtube.com/embed/Vhm5_jCiFCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="audio">
+      </div>
+      <div id="maps">JS prijungi</div>
+      <iframe src="https://goo.gl/maps/6gz2Pw2wz5gAjJvV8" width="400" height="400" style="border:0" allowfullscreen=""></iframe>
+      <div id="page">
+        <iframe src="https://www.lrs.lt" frameborder="0" height="300" height="500"></iframe>
+      </div>
+    </section>
+    </div>
+  </main>
+</body>
+</html>

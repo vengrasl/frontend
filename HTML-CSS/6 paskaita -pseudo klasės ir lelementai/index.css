@@ -1,0 +1,37 @@
+p.rytoTekstas#hallo{
+  font-weight: bold;
+}
+.rytoTekstas + p{
+color: red;
+}
+h1.heading ~ * {
+  background-color: aqua;
+}
+[href] {
+  color: rgb(255, 128, 0);
+}
+[class$=head] {
+  color:blue;
+}
+
+a:link{
+  background-color: aquamarine;
+}
+  a:visited{
+    background-color: blueviolet;
+  }
+a:hover{
+  background-color: green;
+}
+a:active{
+  background-color: black;
+}
+li::marker{
+  color: tomato
+}
+.selektoriuPvz :not(div){
+  background-color: grey;
+}
+.selektoriuPvz p:last-of-type{
+  color: green;
+}

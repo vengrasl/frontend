@@ -1,0 +1,13 @@
+.box-one{
+    background-image: url(./egypt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-two{
+    background-image: url(./selfie.jpg);
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

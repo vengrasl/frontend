@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 paskaita - Responsive Design</title>
+  <link rel="stylesheet" href="/HTML-CSS/11 paskaita. Responsive design/index.css">
+</head>
+<body>
+  <main>
+    <section id="repsonsive">
+      <h1>Responsive Design</h1>
+      <p>
+        Responsive Design gali reaguoti į vartotojo įrenginį ir/arba jo plotį.
+      </p>
+      <p>
+        Esant skirtingiems ekranų dydžiams - galima pritaikyti skirtingus stilius naudojant @media query.
+      </p>
+    </section>
+    <section id="breakpoints">
+      <div id="devices">
+        <h1>Breakpoint devices</h1>
+        <ol>
+          <li>portrait phone</li>
+          <li>table / landscape phone</li>
+          <li>laptop</li>
+          <li>desktop</li>
+        </ol>
+      </div>
+      <div id="pixels">
+        <h1>Breakpoint width (px)</h1>
+        <ol> <!-- '<' - &lt; -->
+          <li>&lt;500px</li>
+          <li>&lt;678px</li>
+          <li>&lt;992px</li>
+          <li>&lt;1200px</li>
+          <li>&lt;1400px</li> 
+          <li>&gt;1400px</li>
+        </ol>
+      </div>
+    </section>
+    <section id="mobileFirst">
+      <h1>Mobile First</h1>
+      <ul>
+        <li>Iš mažesnio ekrano ekrano dydžio yra lengvesnis perėjimas į didesnį (lengviau pridėti naują turinį nei atimti seną).</li>
+        <li>Koncentracija į turinį (dėl mažo vietos kiekio)</li>
+        <li>Didesnis kiekis vartotojų naudoja mob. aplikacijas (orientacija į didesnį vartotojų kiekį)</li>
+        <li>Google paieškos algoritmas geriau įvertina Mobile first fizainu kurtas svetaines</li>
+      </ul>
+      <p>Naudojant Mobile First dizaino principą, pradedame nuo mažiausio ekrano ir judame link didesnių. <br> tam naudojame @media (min-width:_____px).<br>Naudojant @media (min-width: ____px) svarbu judėti nuo mažesnių dydžių į didesnius. </p>
+    </section>
+    <section id="task1">
+      <h1 class="name1">Desktop</h1>
+      <h1 class="name2">Tablet</h1>
+      <h1 class="name3">Mobile</h1>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <section id="task2">
+      <h1 class="desktop">Desktop</h1>
+      <h1 class="tablet">Tablet</h1>
+      <h1 class="mobile">Mobile</h1>
+      <div id="container">
+        <div class="header">HEADER</div>
+        <div class="menu">MENU</div>
+        <div class="hero">HERO</div>
+        <div class="main">MAIN</div>
+        <div class="blank"></div>
+        <div class="image">IMAGE</div>
+        <div class="extra">EXTRA</div>
+        <div class="banner">BANNER</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

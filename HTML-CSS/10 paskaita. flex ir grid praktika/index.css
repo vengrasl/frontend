@@ -1,0 +1,49 @@
+.bendrasKvadratas {
+  border: 3px solid black;
+  width: 100%;
+  height: 400px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+.didelisKvadratas1 {
+  border: 2px solid red;
+  width: 600px;
+  height: 300px;
+}
+
+.didelisKvadratas2 {
+  border: 2px solid red;
+  width: 600px;
+  height: 300px;
+}
+
+.mazesnisKvadratas1{
+  border: 2px solid black;
+  height: 130px;
+  width: 500px;
+}
+
+.mazesnisKvadratas2{
+  border: 2px solid black;
+  height: 130px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center
+
+}
+.didelisKvadratas2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center
+}
+
+.maziukasKvadratas {
+  border: 2px solid brown;
+  height: 100px;
+  width: 240px;
+}

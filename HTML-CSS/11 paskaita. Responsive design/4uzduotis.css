@@ -1,0 +1,128 @@
+/*import*/
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+@media (min-width:1px) {
+  
+}
+/*common*/
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: rgb(219, 217, 217);
+  padding: 30px
+}
+
+/*header*/
+header .logo{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.mainMenu > ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  box-shadow: 1px 1px 3px rgb(175, 175, 175);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.mainMenu > ul > li{
+width: 100%;
+background-color: #fff;
+padding: 10px;
+background-color: #fff;
+}
+.login{
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(175, 175, 175)
+}
+  .login > p{
+    padding-left: 10px;
+  }
+.mainMenu .link{
+  color: #0bf;
+  font-weight: 600;
+}
+#content{
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(175, 175, 175)
+}
+#content > h1, #content > p{
+  padding-left: 10px;
+}
+footer{
+  text-align: center;
+  color: grey;
+}
+.help {
+  display: none;
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(175, 175, 175)
+}
+/*desktop*/
+@media (min-width: 1020px) {
+
+header{
+  margin-bottom: 15px;
+}
+.mainMenu > ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 0px;
+}
+.link{
+  text-decoration: none;
+}
+.login{
+  font-weight: 550;
+  color: rgb(80, 79, 79);
+  margin-top: 0px;
+}
+#content{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 195px;
+}
+.mainMenu .link{
+  color: grey;
+  font-weight: 600;
+  }
+.help {
+  display: inline-block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(175, 175, 175);
+  margin-top: 0px;
+}
+#grid{
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-rows: 1fr 15px 1.5fr;
+  grid-template-columns: 1fr 15px 4fr;
+}
+.login{
+  grid-area: 1 / 1 / 2 / 2;
+}
+main{
+  grid-area: 1 / 3 / 4 / 4;
+}
+.help {
+  grid-area: 3 / 1 / 4 / 2;
+}
+}

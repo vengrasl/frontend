@@ -1,0 +1,17 @@
+.featured-tours{
+  .tibet-container{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    .tibet-img{
+    text-align: center;
+    }
+    .tibet-text{
+    text-align: center;
+    position: absolute;
+    left: 150px;
+    bottom: 100px;
+    background-color: red;
+    }
+  }
+}

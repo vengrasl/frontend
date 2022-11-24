@@ -1,0 +1,33 @@
+.our-services {
+  background-color: #f6f8fa;
+  margin: 0px;
+  padding: 0px;
+}
+.our-services .display-grid h2 {
+  padding: 0px;
+  font-size: 16px;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-rows: 1fr 50px 1fr;
+  grid-template-columns: 50px 1fr 50px 1fr 50px;
+}
+
+.display-flexV {
+  grid-area: 1/2/2/3;
+}
+
+.display-flexD {
+  grid-area: 1/4/2/5;
+}
+
+.display-flexT {
+  grid-area: 3/2/4/3;
+}
+
+.display-flexV, .display-flexD, .display-flexT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=our-services.css.map */

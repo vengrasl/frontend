@@ -1,0 +1,17 @@
+$big-text: 5rem;
+$color-warning: red;
+
+#preprocesors{
+  h1{
+    font-size: $big-text;
+  }
+  div{
+    h3{
+      font-size: $big-text;
+      color: $color-warning;
+    }
+    p{
+      color: $color-warning;
+    }
+  }
+}

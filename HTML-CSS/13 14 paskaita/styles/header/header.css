@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+header .headerText {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+header .headerLogo {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  gap: 20px;
+}
+header h1 {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+header span {
+  color: #6a03e5;
+}/*# sourceMappingURL=header.css.map */

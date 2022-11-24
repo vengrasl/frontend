@@ -1,0 +1,39 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+  .hero{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #6a03e5;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 850px;
+    }
+
+  .hero{
+    h1{
+      font-size: 35px;
+      letter-spacing: 10px;
+    }
+    p{
+      font-size: 17px;
+      line-height: 1.7;
+      padding: 0px;
+    }
+    .hero-button{
+      margin-top: 20px;
+    }
+    button{
+      padding: 0px;
+      font-size: 17px;
+      width: 120px;
+      height: 50px;
+      color: white;
+      background-color: #6a03e5;
+      border: 1px dotted #2f0a74;
+      border-radius: 5px;
+    }
+  }

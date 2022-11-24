@@ -1,12 +1,10 @@
-.tibet-container {
+.featured-tours .tibet-container {
   position: relative;
 }
-
-.tibet-img {
+.featured-tours .tibet-container .tibet-img {
   text-align: center;
 }
-
-.tibet-text {
+.featured-tours .tibet-container .tibet-text {
   position: absolute;
   left: 150px;
   bottom: 100px;

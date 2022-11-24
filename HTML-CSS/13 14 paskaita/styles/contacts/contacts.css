@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #6a03e5;
+}
+.contacts h1 {
+  color: white;
+  margin: 0px;
+  padding-top: 50px;
+}
+.contacts p {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 0px;
+  text-align: center;
+  word-spacing: 5px;
+}
+.contacts .text-submit {
+  text-align: center;
+}
+.contacts .text-submit input {
+  width: 200px;
+  height: 30px;
+}
+.contacts .text-submit button {
+  height: 36px;
+  width: 70px;
+}/*# sourceMappingURL=contacts.css.map */

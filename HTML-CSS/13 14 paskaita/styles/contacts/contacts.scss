@@ -1,0 +1,29 @@
+.contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #6a03e5;
+  h1{
+    color: white;
+    margin: 0px;
+    padding-top: 50px;
+  }
+  p {
+    color: white;
+    font-size: 25px;
+    padding-bottom: 0px;
+    text-align: center;
+    word-spacing: 5px;
+  }
+  .text-submit{
+    text-align: center;
+      input{
+        width: 200px;
+        height: 30px;
+      }
+      button{
+        height: 36px;
+        width: 70px;
+      }
+  }
+  }

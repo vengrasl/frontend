@@ -1,23 +1,48 @@
+nav {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   height: 100px;
 }
-header .headerText {
+
+.headerText {
   display: flex;
   align-items: center;
   padding-left: 20px;
 }
-header .headerLogo {
+
+.headerLogo {
   display: flex;
   align-items: center;
   padding-right: 20px;
   gap: 20px;
 }
-header h1 {
+
+h1 {
   font-size: 25px;
   letter-spacing: 5px;
 }
-header span {
+
+span {
   color: #6a03e5;
+}
+
+@media (min-width: 1020px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0px;
+    gap: 20px;
+  }
+  .a-color {
+    color: black;
+  }
 }/*# sourceMappingURL=header.css.map */

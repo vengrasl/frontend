@@ -1,0 +1,41 @@
+footer{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  height: 320px;
+  color: white;
+  background-color: rgb(19, 18, 18);
+  align-items: center;
+  p{
+    font-size: 18px;
+  }
+}
+.footer-menu{
+  width: 400px;
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px
+  }
+}
+li{
+  padding: 0px;
+  font-size: 20px;
+  a{
+    padding: 0px;
+    color: aliceblue;
+  }
+}
+.footer-logo{
+  width: 200px;
+  ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px
+  }
+}

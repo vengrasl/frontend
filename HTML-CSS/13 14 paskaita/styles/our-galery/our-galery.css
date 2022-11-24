@@ -1,0 +1,15 @@
+.our-galery {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  background-color: #f6f8fa;
+}
+.our-galery h1 {
+  margin: 40px 0px 40px;
+}
+.our-galery img {
+  border-bottom: 5px solid #6a03e5;
+}
+.our-galery span {
+  color: #6a03e5;
+}/*# sourceMappingURL=our-galery.css.map */

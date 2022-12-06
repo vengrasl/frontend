@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20 paskaita. Eventai ir DOM</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="events">
+      <h1>Events</h1>
+        <p>
+          Events(įvykiai) - puslapyje vykstantys kažkokie veiksmai (pelės paspaudimas/ scroll, failo įkėlimas ir pan..). <br>
+          Norint klausyti ar nutinka įvykis, reikia nurodyti (selektinti), kurioje DOM dalyje tas įvykis gali nutikti. <br>
+          Nusirodžius, kurioje dalyje klausomės įvykio  - reikia aprašyti įvykio klausymąsi. Tai padarome rašydami "addEventListener" metodą, kuris priima 2 parametrus: koksĮvykis, kąDarytiNutikusĮvykiui <br>
+          https://www.youtube.com/watch?v=XF1_MlZ5l6M&ab_channel=WebDevSimplified
+        </p>
+    </section>
+    <section id=DOM>
+      <h1>DOM (puslpais)</h1>
+      <p>
+        Dokumentas - Puslapis kuriame yra visa vartotojui atkartojama informacija(tekstas, pav....). <br>
+        Objektas - kažkoks puslapio elementas (nuo html iki span tag'o). <br>
+        Modelis - objektų struktūra kažkokiame elemente (tekstas, pav....).
+      </p>
+      <p>
+        Norėdami per JS selektinti kažkurią DOM dalĮ, rašome kodą: "document.querySelector" arba "document.querySelectorAll". "QuarySelector"priima 1 parametrą - selektorių (tokį, kokį rašome)
+      </p>
+    </section>
+      <div class="protevis">
+        <div class="tevas">
+          <div class="vaikas"></div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="grandparent" id="grandparent-id">
+        <div class="parent1">
+          <div class="child1"></div>
+          <div class="child2"></div>
+        </div>
+        <div class="parent2">
+          <div class="child3" class="parent2child3"></div>
+          <div class="child4"></div>
+        </div>
+      </div>
+      <h2 class="h2pirmas">H2 tekstas</h2>
+      <h2 class="h2antras">H2 tekstas2</h2>
+      <ul>
+        <li>Vienas</li>
+        <li class="green">Du</li>
+        <li>Trys</li>
+        <li>Keturi</li>
+      </ul>
+      <textarea name="text" id="" cols="30" rows="10" class="tekstas">lel</textarea> 
+      <input type="checkbox" class="check-box">
+  </main>
+</body>
+</html>

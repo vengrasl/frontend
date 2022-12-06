@@ -1,0 +1,86 @@
+#pirmaSekcija {
+  background-color: rgb(55, 57, 151);
+  font-size: 50px;
+}
+
+.rodyti{
+  height: 50px;
+  width: 100px;
+}
+.nerodyti{
+  height: 50px;
+  width: 100px;
+}
+
+.nerodyti{
+  display: none;
+}
+
+#antraSekcija {
+  background-color: rgb(27, 129, 66);
+  font-size: 50px;
+}
+
+.sleptiOrRodyti{
+  height: 50px;
+  width: 100px;
+}
+
+.display{
+  display: none;
+}
+
+.task2Antraste{
+  font-size: 50px;
+  text-align: center;
+}
+.task2paragrafas{
+  font-size: 30px;
+  text-align: justify;
+  margin-top: 0px;
+  text-indent: 50px;
+}
+.task2Display{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  line-height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.MonaLisaImg{
+  border: 5px solid black;
+  height: 400px;
+}
+.task3Title{
+  font-size: 50px;
+  text-align: center;
+}
+.task3ImageContainer{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  width: 100%;
+  height: 300px;
+}
+.task4Title{
+  font-size: 40px;
+  text-align: center;
+}
+.task4div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.task4images{
+  border: 5px solid black;
+  height: 300px;
+  width: 300px;
+}
+.t4p{
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-indent: 50px;
+  text-align: justify;
+}

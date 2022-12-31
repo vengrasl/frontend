@@ -11,3 +11,6 @@ const asmuo = {
   lytis : "vyras",
   vedes : false
 }
+
+let somefunction = (object) => Object.keys(object)
+console.log(somefunction(asmuo))

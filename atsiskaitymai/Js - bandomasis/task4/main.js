@@ -9,8 +9,13 @@ fetch('./data.json')
   .then(response => response.json())
   .then(data => {
     data.movies.forEach(item => {
-      output.innerHTML = `
-      <p>${item.castAndCrew.actors[0].name}</p>
-      `
+      const itemDiv = document.createElement('p'); 
+      itemDiv.innerText = item.title;
+      output.append(itemDiv);
+      item.castAndCrew.actors.forEach(element => {
+        const nameDiv = document.createElement('p');
+        nameDiv.innerText = element.name;
+        output.append(nameDiv);
+      })
     })
   })

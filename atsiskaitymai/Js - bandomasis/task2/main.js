@@ -10,15 +10,17 @@ const supermanImg = document.querySelector('.supermanimg');
 
 const supermanOutput = document.querySelector('.supermanOuput');
 
-let atsakymas = 0
+let atsakymasBatman = 0
 
 batmanImg.addEventListener('click', () => {
-  atsakymas++;
-  batmanOutput.textContent = atsakymas;
+  atsakymasBatman++;
+  batmanOutput.textContent = atsakymasBatman;
 })
 
+
+let atsakymasSuperman = 0
 supermanImg.addEventListener('click', ()=>{
-  atsakymas++
-  supermanOutput.textContent = atsakymas;
+  atsakymasSuperman++
+  supermanOutput.textContent = atsakymasSuperman;
 })
 

@@ -12,5 +12,5 @@ const asmuo = {
   vedes : false
 }
 
-let somefunction = (object) => Object.keys(object)
-console.log(somefunction(asmuo))
+let somefunction = (object) => Object.keys(object);
+console.log(somefunction(asmuo));

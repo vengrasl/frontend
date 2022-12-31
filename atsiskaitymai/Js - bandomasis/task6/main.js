@@ -13,3 +13,9 @@ const asmenys = [
   { id: '6', name: 'Kamilė', masina: "BMW", masinosGamybosMetai: 1999 },
   { id: '7', name: 'Aloyzas', masina: "Honda", masinosGamybosMetai: 2010 }
 ];
+
+const avarageCarYears = asmenys.reduce((total, item) => total + (item.masinosGamybosMetai / 7), 0) //kas vietoj 7?
+console.log(avarageCarYears)
+
+let avarageYeasFunction = (array) => array.reduce((total, item) => total + (item.masinosGamybosMetai / 7), 0) 
+console.log(avarageYeasFunction(asmenys));

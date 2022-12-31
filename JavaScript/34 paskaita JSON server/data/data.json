@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "title": "The Outsider",
+      "author": "Stephan King",
+      "description": "With more than 70 books in his catalog, Stephen King has long been one of the few blockbuster writers who regularly publishes short fiction. “If It Bleeds,” his new collection, is a strong reminder that — for an author who has produced more than a few novels of staggering length — some of his most interesting work has fallen on the shorter side.",
+      "image": "https://static01.nyt.com/newsgraphics/2020/04/28/stephen-king-guide/assets/images/outsider-2000.jpg",
+      "rating": "5",
+      "id": 3
+    },
+    {
+      "title": "asdfasdf",
+      "author": "Authors name: princas",
+      "description": "Book description: Book description: t is a 1986 horror novel by American author Stephen King. It was his 22nd book and his 17th novel written under his own name. The story follows the experiences of seven children as they are terrorized by an evil entity that exploits the fears of its victims to disguise itself while hunting its prey. \"It\" primarily appears in the form of Pennywise the Dancing Clown to attract its preferred prey of young children.",
+      "image": "https://media.newyorker.com/photos/59b3f875e899d754c57f4c35/2:2/w_2798,h_2798,c_limit/Rothman-IT.JPG",
+      "rating": "Uploader gave this book a rating: Uploader gave this book a rating: 4.8 out of 5 out of 5",
+      "id": 4
+    },
+    {
+      "title": "The Night in Lisbon ",
+      "author": "Erich Maria Remarque",
+      "description": "The Night in Lisbon (German: Die Nacht von Lissabon) is a novel by Erich Maria Remarque published in 1962. It revolves around the plight of two German refugees in the opening months of World War II. One of the refugees relates their story during the course of a single night in Lisbon in 1942. The story he recounts is mainly a romantic one, and also contains a lot of action with arrests, escapes and near-misses",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/The.Night.In.Lisbon.cover.jpg/220px-The.Night.In.Lisbon.cover.jpg",
+      "rating": "4.5",
+      "id": 5
+    },
+    {
+      "title": "The Little Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "description": "The Little Prince (French: Le Petit Prince, pronounced [lə p(ə)ti pʁɛ̃s]) is a novella by French aristocrat, writer, and military pilot Antoine de Saint-Exupéry. It was first published in English and French in the United States by Reynal & Hitchcock in April 1943 and was published posthumously in France following liberation; Saint-Exupéry's works had been banned by the Vichy Regime.",
+      "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3d588e32432307.60392b954f838.jpg",
+      "rating": "4.9",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

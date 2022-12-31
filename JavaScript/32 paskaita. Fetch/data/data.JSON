@@ -1,0 +1,9 @@
+{
+  "string": "zodis",
+  "number": 54,
+  "boolean": false,
+  "array": ["betkas", 64, true],
+  "obect": {
+    "betkas": "betkassssssss"
+  }
+}

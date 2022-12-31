@@ -1,0 +1,7 @@
+table, tr, td {
+  border: 2px solid black;
+}
+
+.table{
+  margin-top: 20px;
+}

@@ -1,0 +1,146 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 15px;
+  box-shadow: 0px 3px 3px 3px #ccc;
+}
+
+header > h1 > span{
+  color: #6c258c;
+}
+
+header h1{
+  font-size: 45px;
+}
+.headerLogo{
+  display: flex;
+  gap: 15px;
+}
+
+#sectionOne{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+}
+
+#sectionOne > form{
+  box-shadow: 3px 3px 5px 6px #ccc;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form > p{
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+input{
+  font-size: 30px;
+  border-radius: 5px;
+  width: 80%;
+}
+#submit{
+  font-size: 22px;
+  color: #ece8ee;
+  background-color: #6c258c;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#submit:hover{
+  opacity: 0.9;
+}
+
+#submit:active{
+  opacity: 0.7;
+}
+
+form > div{
+  display: flex;
+  gap: 10px;
+}
+
+#taskLists{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+#taskLists > div{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  box-shadow: 2px 3px 5px 6px #ccc;
+}
+
+.check{
+  width: 10%;
+  accent-color: green;
+}
+
+.outputText{
+  width: 60%;
+  overflow-wrap: break-word
+}
+.buttonDiv{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonChange{
+  color: #ece8ee;
+  background-color: #6c258c;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.buttonDelete{
+  color: #ece8ee;
+  background-color: #6c258c;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.buttonChange:hover{
+  opacity: 0.9;
+}
+
+.buttonChange:active{
+  opacity: 0.7;
+}
+
+.buttonDelete:hover{
+  opacity: 0.9;
+}
+.buttonDelete:active{
+  opacity: 0.7;
+}
+
+.inputChange{
+  width: 100%;
+  height: 20px;
+  font-size: 15px;
+}
+

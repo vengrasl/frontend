@@ -42,7 +42,7 @@ pirmaSekcija.innerHTML +=
 
 let nerodytiMygtukas = document.querySelector(".rodyti"); // selektinamas rodyti mygtukas, kuris ivestas JS'e
 
-console.dir(nerodytiMygtukas); //kaip jis atrodo. node dalyje paziureti kalsiu sarasa. svarbiausi: add, remove, toggle
+console.dir(nerodytiMygtukas); //kaip jis atrodo. node dalyje paziureti klasiu sarasa. svarbiausi: add, remove, toggle
 
 let rodytiMygtukas = document.querySelector(".nerodyti") // selektinamas nerodyti mygtukas
 console.dir(rodytiMygtukas);

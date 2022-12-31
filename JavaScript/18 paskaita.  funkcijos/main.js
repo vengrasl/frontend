@@ -115,9 +115,9 @@ console.groupCollapsed('funkcijos');
 console.log("Hello ");
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
 /*
-  Funkcija - veiksmų seka, kuri yra vykdoma tik tuomet, kai į tą funkciją yra kreipiamasi.
-  Parametrai/Argumentai - duomenys, perduodami funkcijai jos iškvietimo metu, su kuriais funkcijos viduje bus atliekami kažkokie veiksmai.
-  Return - funkcija gali kažką gražinti. funkcijos veiksmai vyksta iki tol kol pasiekiamas return.
+  Funkcija - ((1)- atlieka)) veiksmų seka, kuri yra vykdoma tik tuomet, kai į tą funkciją yra kreipiamasi.
+  Parametrai/Argumentai - ((2)- priima) duomenys, perduodami funkcijai jos iškvietimo metu, su kuriais funkcijos viduje bus atliekami kažkokie veiksmai.
+  Return - ((3)-grazina)) funkcija gali kažką gražinti. funkcijos veiksmai vyksta iki tol kol pasiekiamas return.
 */
 
 function hello(vardas){

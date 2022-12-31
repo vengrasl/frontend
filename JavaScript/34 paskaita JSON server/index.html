@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON server</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="inputSection">
+      <div id="AllFilter">
+        <div id="showAllDiv">
+          <p class="showAllParagraph">Click the button bellow to see all books in storage</p>
+         <button class="showAllButton">Show all</button>
+        </div>
+        <form id="filterForm">
+          <label>Enter a key word find a specific book</label>
+          <input type="text" name="filterInput" class="filterInput" placeholder="Enter book name or author">
+          <button class="filterButton">Find book</button>
+        </form>
+      </div>
+      <form id="InsertForm">
+        <div class="titleDiv">
+          <label>Title of a book</label>
+          <input type="text" name="titleInput" id="titleInput">
+        </div>
+        <div class="authorDiv">
+          <label>Book authors full name</label>
+          <input type="text" name="authorInput" id="authorInput">
+        </div>
+        <div class="descriptionDiv">
+          <label>Leave a description of the book</label>
+          <input type="text" name="descriptionInput" id="descriptionInput">
+        </div>
+        <div class="imageDiv">
+          <label>leave an image of the book (url)</label>
+          <input type="text" name="imageInput" id="imageInput" placeholder="https://www....">
+        </div>
+        <div class="ratingDiv">
+          <label>Give it a rating from 1 to 5</label>
+          <input type="number" name="ratingInput" id="ratingInput" min="1" max="5" step="0.1">
+        </div>
+        <button id="buttonSubmitBook">Submit your book</button>
+      </form>
+    </section>
+    <section id="outputSection"></section>
+  </main>
+</body>
+</html>

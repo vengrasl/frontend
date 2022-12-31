@@ -1,0 +1,169 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(241, 240, 240);
+}
+
+
+#inputSection{ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: rgba(32, 32, 34, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 4px;  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+#AllFilter{
+  width: 50%;
+  height: 250px;
+}
+
+#InsertForm{
+  width: 50%;
+}
+
+#showAllDiv{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.showAllParagraph{
+  margin: 0px;
+}
+
+
+#filterForm{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+
+#InsertForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.titleDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authorDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptionDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+}
+
+.description{
+  text-align: justify;
+}
+
+.description{
+  overflow-wrap: break-word;
+}
+
+.ratingDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  width: 200px;
+}
+
+.cardDiv{
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  box-shadow: rgba(3, 3, 36, 0.89) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 4px;  margin-top: 20px;
+  background-color: white;
+}
+
+#outputSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.commentSection{
+  text-align: center;
+}
+
+.commentsDiv{
+  width: 400px;
+  max-height: 173px;
+  overflow-y:scroll;
+}
+
+.commentForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.comment{
+  margin-top: 20px;
+}
+
+.openModalButton{
+  height: 20.51px;
+}
+
+.removeButton{
+  margin-top: 20px;
+}
+
+.infoDiv > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 250px;
+  width: 400px;
+}
+
+dialog {
+  max-height: 400px;
+}
+
+.modal::backdrop {
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(112, 168, 194) 0%, rgb(255, 255, 255) 90%);
+  opacity: 0.4;
+}
+
+.changeButton {
+  margin-top: 20px;
+}

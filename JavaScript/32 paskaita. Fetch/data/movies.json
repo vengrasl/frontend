@@ -1,0 +1,21 @@
+
+[
+  {
+    "pavadinimas" : "Vienas namuose",
+    "nuotrauka" : "https://www.themoviedb.org/t/p/w500/zYPsleQJo1n1rBPlecJBRb3iwSO.jpg",
+    "trukme" : 120,
+    "aktoriai" : ["Macaulay Culkin","Joe Pesci"]
+  },
+  {
+    "pavadinimas" : "Ziedu valdovas",
+    "nuotrauka" : "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+    "trukme" : 180,
+    "aktoriai" : ["Elijah Wood","Sean Astin"]
+  },
+  {
+    "pavadinimas" : "Pats baisiausias filmas",
+    "nuotrauka" : "https://m.media-amazon.com/images/M/MV5BMGEzZjdjMGQtZmYzZC00N2I4LThiY2QtNWY5ZmQ3M2ExZmM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+    "trukme" : 93,
+    "aktoriai" : ["Marlon Wayans","Anna Faris"]
+  }
+]

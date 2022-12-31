@@ -1,0 +1,17 @@
+//kebabines maisto uzsakymu uzduotys
+
++ 1) susikurti duomenu faila
+
+2) sukurti forma, kurioje gali pasirinkti 1 patiekala
+
+3) pateikus forma, apacioje atvaizduojama saskaita
+
+4+) patobulinti forma, kad butu galima pasirinkti patiekalo kieki. Pakoreguoti saskaita, kad tvarkingai veiktu su ivairiais patiekalu kiekiais
+
+5++)patobulinti forma, kad galima butu leidziama pasirinkti daugiau nei 1 patiekala. pakoreguoti saskaita, kad veiktu daugiau nei su 1 patiekalu
+
+6+) patobulinti forma, kad butu galimybe atmesti nenorima pasirinkimo varianta (netycia pridejai, nebenori) 
+
+7)viska graziai stilizuoti
+
+8)sukurit vizualu meniu (kazka panasaus i ./images/menu.png)

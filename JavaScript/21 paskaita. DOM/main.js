@@ -107,3 +107,21 @@ for(let i = 0; i < data4.length; i++){
 }
 
 
+//fizz-Buzz testas
+
+//x%5/3 - FizzBuzz; x%3 - fizz; x%5 - buzz; x - x 
+
+function fizzBuzz(nuo, iki){
+  for( let i = nuo; i <= iki; i++){
+    if(i % 5 === 0 && i % 3 === 0){
+      console.log("Fizzbuzz");
+    } else if (i % 3 === 0){
+      console.log("fizz");
+    } else if (i % 5 === 0){
+      console.log("buzz");
+    } else{
+      console.log(i);
+    }
+  }
+}
+

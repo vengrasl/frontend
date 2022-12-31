@@ -1,0 +1,26 @@
+1) Parašyti JS kodą, kuris leis vartotojui įvesti temperatūrą celsijumi arba farenheitu. Įvedus celsijų - parodoma kiek temperatūros tai būtų farenheitu | įvedus farenheitą - parodoma kiek temperatūros tai būtų celsijumi.
+
+2) Parašyti JS kodą, kuris skaičiuos kiek kartų buvo paspausta ant vieno arba kito elemento ekrane. (Ekrane turėti 2 nuotraukas ir laukelį po jomis, kuriame bus atvaizduojama kiek kartų buvo paspausta ant kurios nuotraukos)
+
+3) Parašyti JS kodą, kuris vartotojui paspaudus ant mygtuko "Rodyti Vartotoją" užkrautų vartotoją iš API į ekraną. (Mygtukas neberodomas ekrane po jo paspaudimo. Nebūtina ekrane rodyti visos informacijos apie vartotoją.) API nuoroda: https://randomuser.me/api/
+
+4) Parašyti JS kodą, kuris, vartotojui atėjus į puslapį, iš data.json failo į ekraną išvestų filmus ir aktorius, kurie tuose filmuose vaidina. (duomenų yra didelis perteklius, jums jų visų naudoti nereikia. Tik filmų pavadinimai ir aktorių vardai+pavardės).
+
+5) Parašyti JS kodą, kuris turėtų funkciją. Funkcija kaip argumentą priima masyvą. Funkcija grąžina naują masyvą su išfiltruotais/atrinktais duomenimis. Funkcija turi atrinkti asmenis, kurie turi mašinas.
+
+6) Parašyti JS kodą, kuris turėtų funkciją. Funkcija kaip argumentą priima masyvą. Funkcija grąžina skaičių. Funkcija turi suskaičiuoti, koks yra vartotojų mašinų gamybos metų vidurkis.
+
+7) Parašykite JS kodą, kuris turėtų funkciją. Funkcija kaip argumentą priima objektą. Funkcija grąžina masyvą. Funkcija iš gauto objekto turi atrinkti raktažodžius (Object.keys) ir sudėti juos į masyvą.
+
+8) Sukurkite klasę "trueFalse", kuri turi 4 metodus. metodas1 priima skaičių ir grąžina true jei skaičius didesnis už 100 ir false kitu atveju. metodas2 priima žodį ir grąžina true jeigu jis prasideda didžiąja raide ir false kitu atveju. metodas3 priima skaičių ir grąžina true jeigu šis yra lyginis ir false kitu atveju. metodas4 priima žodį ir grąžina true jeigu šis yra ilgesnis nei 8 raidžių ir false kitu atveju.
+
+9) Sukurkite klasę, kuri priima 4 savybes ir turi 2 metodus. Savybės: masinosMarke, masinosModelis, masinosKaina, masinosGamybosMetai. 1 metodas tikrina ar mašina brangesnė negu 10 000 eurų ir grąžina true|false. 2 metodas tikrina ar mašina senesnė negu 2010 ir grąžina mašinos amžių ir tekstą "Antikvaras"|"Šviežiena".
+
+10) Sutvarkykite 10 užduoties failų kodą taip, kad veiktų main.js parašytas kodas.
+
+extra:
+Pasidaryti paruoštuką iš 1-10 užduoties:
+  Kokios užduotys.
+  Kokio JS funkcionalumo reikalauja.
+  Kokias temas apima.
+  Lengviausių -> sunkiausių sąrašą.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="appartment">
+      <form>
+        <div id="appartmentRooms">
+          <span>How many rooms are you looking for? (2 - 4): </span>
+          <label >From:</label>
+          <input type="number" name="appartmentRoomsMin" min="2" max="4" step="1" id="appartmentRoomsMin">
+          <label >To:</label>
+          <input type="number" name="appartmentRoomsMax" min="2" max="4" step="1" id="appartmentRoomsMax">
+        </div>
+        <div id="appartmentFloor">
+          <span>Select the desired floor (1 - 9): </span>
+          <label>From</label>
+          <input type="number" name="appartmentFloorMin" min="1" max="9" step="1" id="appartmentFloorMin">
+          <label>To</label>
+          <input type="number" name="appartmentFloorMax" min="1" max="9" step="1" id="appartmentFloorMax">
+        </div>
+        <div id="appartmentPrice">
+          <label>Specify the maximum price that you are willing to pay</label>
+          <input type="number" name="appartmentPrice" id="appartmentPrice">
+        </div>
+        <button>Search apperments</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

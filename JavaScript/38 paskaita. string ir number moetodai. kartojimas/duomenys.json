@@ -1,0 +1,65 @@
+{
+  "appartments": [
+    {
+      "appartmentNumber": 1,
+      "totalSpace": 45,
+      "numberOfRooms": 3,
+      "price": 135000,
+      "phoneNumber": 865439600
+    },{
+      "appartmentNumber": 6,
+      "totalSpace": 60,
+      "numberOfRooms": 4,
+      "price": 180000,
+      "phoneNumber": 86207494
+    },{
+      "appartmentNumber": 23,
+      "totalSpace": 55,
+      "numberOfRooms": 3,
+      "price": 165000,
+      "phoneNumber": 86840289
+    },{
+      "appartmentNumber": 57,
+      "totalSpace": 46,
+      "numberOfRooms": 3,
+      "price": 123000,
+      "phoneNumber": 86055961
+    },{
+      "appartmentNumber": 103,
+      "totalSpace": 40,
+      "numberOfRooms": 2,
+      "price": 120000,
+      "phoneNumber": 86229428
+    },{
+      "appartmentNumber": 106,
+      "totalSpace": 36,
+      "numberOfRooms": 2,
+      "price": 108000,
+      "phoneNumber": 86885752
+    },{
+      "appartmentNumber": 200,
+      "totalSpace": 55,
+      "numberOfRooms": 3,
+      "price": 165000,
+      "phoneNumber": 86688993
+    },{
+      "appartmentNumber": 251,
+      "totalSpace": 63,
+      "numberOfRooms": 4,
+      "price": 186000,
+      "phoneNumber": 86047853
+    },{
+      "appartmentNumber": 305,
+      "totalSpace": 50,
+      "numberOfRooms": 3,
+      "price": 150000,
+      "phoneNumber": 86852703
+    },{
+      "appartmentNumber": 399,
+      "totalSpace": 57,
+      "numberOfRooms": 3,
+      "price": 171000,
+      "phoneNumber": 86007918
+    }
+  ]
+}

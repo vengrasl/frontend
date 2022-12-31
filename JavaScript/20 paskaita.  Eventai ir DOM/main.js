@@ -91,26 +91,11 @@ vaikas.addEventListener("click", function(event){
   console.log(event);
 });
 
-//3)   Išbandyti 5 skirtingus event'ų listener'ius.
-
-tekstas = document.querySelector('.tekstas')
-console.log(tekstas);
-
-tekstas.addEventListener("onselect", function(event){
-  console.log(event);
-})
-
-checkboxas = document.querySelector(".check-box");
-console.log("ivedei sk");
-
-checkboxas.addEventListener("input", function(event){
-  console.log(event + "click");
-})
 
 //        DOM kūrimas iš JS'o
 let DOM_is_JS = document.querySelector('#DOM_is_JS');
 
-DOM_is_JS.innerHTML += "<p>Labas</p>";
+
 
 let paragrafas = document.createElement("p");
 console.dir(paragrafas);

@@ -14,3 +14,6 @@ const asmenys = [
   { id: '6', name: 'Kamilė', turiMasina: true },
   { id: '7', name: 'Aloyzas', turiMasina: true }
 ];
+
+const functionToFilterPersons = (array) => array.filter(item => item.turiMasina == true);
+console.log(functionToFilterPersons(asmenys));

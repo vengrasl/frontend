@@ -1,3 +1,8 @@
+import { asmuo1, asmuo2, asmuo3, asmuo4, asmuo5, asmuo6 } from "./scripts/data.js"; //importuojam asmenis
+import { vardoIlgis } from "./scripts/vardoIlgis.js";
+import { lytis } from "./scripts/lytis.js";
+import { pilnametyste } from "./scripts/pilnametyste.js";
+
 /*
   Sutvarkykite 10 užduoties failų kodą taip, kad veiktų main.js parašytas kodas.
 */
@@ -15,3 +20,4 @@ console.log(trecias);
 console.log(ketvirtas);
 console.log(penktas);
 console.log(sesi);
+

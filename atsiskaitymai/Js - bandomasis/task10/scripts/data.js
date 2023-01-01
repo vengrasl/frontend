@@ -28,3 +28,5 @@ let asmuo6 = {
   amzius : 10,
   lytis : "moteris"
 }
+
+export {asmuo1, asmuo2, asmuo3, asmuo4, asmuo5, asmuo6 }

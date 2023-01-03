@@ -39,4 +39,30 @@ fhrenheitCelciusForm.addEventListener('submit', (e) => {
   frCelciusOutput.textContent = atsakymas;
 })
 
+//su switch
+const optionalform = document.querySelector('.optionalform');
+const optionalInput = document.querySelector('.value');
+const selectCelciuFr = document.querySelector('#optianal');
+const optionalOutput = document.querySelector('.optionalOutpu');
+
+optionalform.addEventListener('submit', (e) => {
+  console.log(e)
+  e.preventDefault();
+  console.log(optionalInput.valueAsNumber);
+
+  let atsakymas = 0
+  switch(selectCelciuFr.value){
+    case 'optionCelciusToFr':
+      atsakymas = (optionalInput.valueAsNumber) * 9/5 + 32
+    break
+    case 'optionFrToCelcius':
+      atsakymas = ((optionalInput.valueAsNumber) - 32 * 5 / 9).toFixed(2)
+    break
+  }
+  optionalOutput.textContent = atsakymas
+})
+
+
+
+
 

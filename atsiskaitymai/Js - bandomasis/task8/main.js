@@ -12,33 +12,41 @@ class trueFalse {
     this.number = number;
     this.string = string;
   }
- methodOne(someNumber){
+ methodOne(){
    if (this.number > 100) {
     return true
    } else {
     return false
    }
   }
-  methodTwo(someString){
+  methodTwo(){
     if (this.string.charAt(0) == this.string.charAt(0).toUpperCase(0)){
       return true
     } else {
       return false
     }    
   }
-  methodThree(someNumber){
+  methodThree(){
     if(this.number % 2 == 0){
       return true
     } else {
       return false
     }
   }
-  methodFor(someString){
+  methodFor(){
     if (this.string.length > 8){
       return true
     } else{
       return false
     }
+  }
+  methodFive(number){
+    this.number = number
+    if (number > 100) {
+      return true
+     } else {
+      return false
+     }
   }
 }
 
@@ -51,8 +59,4 @@ console.log(object.methodTwo())
 console.log(object.methodThree())
 
 console.log(object.methodFor())
-
-
-
-
 

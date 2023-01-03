@@ -8,12 +8,14 @@ console.log(output)
 fetch('./data.json')
   .then(response => response.json())
   .then(data => {
-    data.movies.forEach(item => {
-      const itemDiv = document.createElement('p'); 
-      itemDiv.innerText = item.title;
-      output.append(itemDiv);
-      item.castAndCrew.actors.forEach(element => {
+    data.movies.forEach(item => { //for each per obj
+      const itemDiv = document.createElement('h1'); //sukuriam h1 for title
+      itemDiv.setAttribute('class', 'itemDiv') 
+      itemDiv.innerText = item.title; // object.title
+      output.append(itemDiv); // ikeliam pavadinima i output
+      item.castAndCrew.actors.forEach(element => { 
         const nameDiv = document.createElement('p');
+        nameDiv.setAttribute('class', 'nameDiv')
         nameDiv.innerText = element.name;
         output.append(nameDiv);
       })

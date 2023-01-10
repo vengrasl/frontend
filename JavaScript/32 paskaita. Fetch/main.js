@@ -84,7 +84,7 @@ fetch("./data/data.json")
   fetch("./data/movies.json")
     .then(responsive => responsive.json())
     .then(data => {
-    //  console.log(data[0].aktoriai.map(aktoriai => `<li>${aktoriai}</li>`).toString().replaceAll(',','')) //data yra
+      console.log(data[0].aktoriai.map(aktoriai => `<li>${aktoriai}</li>`).toString().replaceAll(',','')) //data yra
       data.forEach(movie => {
         document.querySelector('#movies').innerHTML +=`
         <div class="movie">

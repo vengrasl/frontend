@@ -2,4 +2,110 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: hwb(0 90% 10%);
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85%;
+  margin: 0 auto;
+}
+.logo {
+  width: 100%;
+  height: 80px;
+}
+header{
+  display: flex;
+  flex-direction: column;
+}
+header > nav > ul {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  gap: 50px;
+  padding-left: 30px;
+  background-color: #1a3442;
+}
+header > nav > ul > li {
+  list-style: none;
+}
+header > nav > ul > li > a {
+  color: white;
+  font-size: large;
+  text-decoration: none;
+}
+.headerImg {
+  width: 100%;
+}
+#firstSection {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about, .company, .services {
+  background-color: white;
+  padding: 25px 20px 20px 15px;
+}
+.about > h1, .company > h1, .services > h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.about > p, .company > p, .services > p {
+  line-height: 1.3;
+  font-weight: 600;
+}
+#secondSection {
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  padding: 25px 20px 20px 15px;
+  margin-bottom: 20px;
+}
+.content {
+  width: 69%;
+}
+.content > h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.content > p {
+  line-height: 1.3;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.content > h2 {
+  margin-bottom: 10px;
+}
+.navigation > nav {
+  background: #d9d9db;
+}
+.navigation {
+  width: 31%;
+}
+.navigation > h2 {
+  margin-bottom: 10px;
+}
+.navigation > nav {
+  height: 85%;
+}
+.navigation > nav > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.navigation > nav > ul > li {
+  list-style: none;
+  padding-left: 20px;
+}
+.navigation > nav > ul > li > a {
+  font-size: large;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
 }

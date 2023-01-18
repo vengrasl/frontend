@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  border-bottom: 2px solid black;
+}
+#root > div {
+  display: flex;
+}
+.taskList {
+  display: flex;
+  justify-content: center;
+}
+.singleTaskDiv {
+  display: flex;
+  gap: 20px;
+  border: 2px solid black;
+}
+.taskCompleted {
+  text-decoration: line-through;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header > p > span {
+  color: red;
+}
+.formDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}

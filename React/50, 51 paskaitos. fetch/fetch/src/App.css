@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+.headerLogo{
+  height: 150px;
+}
+header > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 150px;
+}
+main {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.knygos {
+  width: 310px;
+  border: 2px solid black;
+}
+.pavadinimas{
+  text-align: center;
+  margin: 10px;
+}
+.aprasymas{
+  text-align: justify;
+}
+.nuotrauka{
+  width: 300px;
+  height: 300px;
+}
+.knygosInformacija{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.addForm{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.addForm > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.addForm > div > label {
+  text-align: center;
+}

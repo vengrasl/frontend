@@ -1,0 +1,64 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+header > div > p {
+  font-size: 20px;
+}
+header > div > p > span {
+  color: red;
+  font-size: 20px;
+}
+.headerLogo{
+  height: 200px;
+  margin-left: 50px;
+}
+.userIcon{
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.userInfo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.userInfo > button{
+  background-color: #373131;
+  color: white;
+  height: 30px;
+  width: 60px;
+}
+
+.userInfo > button:hover {
+  opacity: 0.8;
+}
+
+header > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logIn{
+  background-color: #373131;
+  color: white;
+}
+.logIn:hover{
+  opacity: 0.8;
+}
+
+.cardImg{
+  width: 200px;
+}
+
+.inputCheck{
+  display: flex;
+}

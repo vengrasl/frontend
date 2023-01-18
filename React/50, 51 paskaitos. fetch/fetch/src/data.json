@@ -1,0 +1,21 @@
+{
+  "knygos": [
+    {
+      "title": "naujas pavadinimas",
+      "author": "",
+      "description": "",
+      "pages": "",
+      "image": "",
+      "id": 1
+    },
+    {
+      "pavadinimas": "Psichoterapeutas",
+      "nuotrauka": "https://www.venividi.lt/wp-content/uploads/2021/12/2021-12-06-10.02.40-scaled-1-1530x700.jpg",
+      "autorius": "B. A. Paris",
+      "aprasymas": "kvapą gniaužiantis psichologinis trileris, įtaigiai narpliojantis po, atrodytų, visiškai įprastos kasdienybės šydu slypinčius šokiruojančius dalykus.",
+      "puslapiuSkaicius": 440,
+      "arPerskaityta": false,
+      "id": 2
+    }
+  ]
+}

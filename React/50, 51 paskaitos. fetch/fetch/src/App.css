@@ -88,3 +88,6 @@ main {
 .wrongFields{
   color: red;
 }
+.aprasymas{
+  overflow-wrap: break-word;
+}

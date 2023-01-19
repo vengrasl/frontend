@@ -15,7 +15,7 @@ const Knygos = ({ knygos }) => {
     setIsDeleted(true);
   }
 
-  //kortele trinama is DOM. Kitu atveju reikia page refresh
+  // kortele trinama is DOM. Kitu atveju reikia page refresh
   if (isDeleted) {
     return null;
   }

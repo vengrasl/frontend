@@ -10,9 +10,16 @@ function App() {
   return (
     <>
 
-    <nav> {/*apgaubs visus routes, nes yra routes isoreje */}
-      <h1>Hello, nav</h1>
-    </nav>
+      <header>
+        <h1>Hello, nav</h1>
+        <nav> {/*apgaubs visus routes, nes yra routes isoreje */}
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <hr />
 
       <Routes>
 
@@ -37,6 +44,8 @@ function App() {
 
 
       </Routes>
+
+      <hr />
 
       <footer>
         <h1>Hey, footer</h1>

@@ -4,7 +4,7 @@ import UserLogin from './components/UserLogin';
 import UserRegistration from './components/UserRegistration';
 import Card from './components/Card';
 import Cards from './components/Cards';
-import { Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
@@ -14,8 +14,11 @@ function App() {
         <h1>Hello, nav</h1>
         <nav> {/*apgaubs visus routes, nes yra routes isoreje */}
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/register">Login</Link></li>
+            <li><Link to="/cards">Login</Link></li>
+            <li><Link to="/card">Login</Link></li>
           </ul>
         </nav>
       </header>

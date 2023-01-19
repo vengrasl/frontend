@@ -10,7 +10,7 @@ import { useState } from 'react';
 
 const App = () => {
 
-  const [cards, setCards] = useState([
+  const [cards] = useState([
     {
       tekstas: "labas",
       id: 1

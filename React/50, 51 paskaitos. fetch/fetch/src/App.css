@@ -17,12 +17,7 @@ main {
 .headerLogo{
   height: 150px;
 }
-header > form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-right: 150px;
-}
+
 main {
   display: flex;
   gap: 20px;
@@ -67,5 +62,29 @@ main {
 .logOut {
   display: flex;
   flex-direction: column;
+  margin-right: 150px;
+  gap: 10px;
+}
+.logInDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   margin-right: 50px;
+}
+.logInButton, .logOffButton {
+  background-color: #1d2454;
+  color: white;
+}
+.logInButton:hover, .logOffButton:hover{
+  opacity: 0.8;
+}
+.logInDiv > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+.wrongFields{
+  color: red;
 }

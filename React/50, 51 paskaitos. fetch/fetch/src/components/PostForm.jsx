@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-const PostForm = () => {
-  const [formData, setFormData] = useState({
+const PostForm = ({data, setData}) => {
+
+  const [formData, setFormData] = useState({ //formos inputu laukai
     title: "",
     author: "",
     description: "",
@@ -26,6 +27,8 @@ const PostForm = () => {
         "Content-Type": "application/json"
       }
     });
+    setData([...data, formData]); //visas esamas korteles update su naujai ivestais duomenimis su formos submit
+    setFormData({title: "", author: "", description: "", pages: "", image: ""}) // po submit isvalomi formos input laukai
   }
   return (
 

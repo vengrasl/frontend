@@ -7,7 +7,7 @@ const GeneratedTasks = ({tasks, setTasks, uncompletedTasks, setUncompletedTasks}
   const handleDelete = (id) => { //kuriama funkcija su parametru id (taip atskirs kuri task yra kuri). Kvietimo metu (paspaudus delete button)
      const updatedTasks = tasks.filter((task) => task.id !== id); //kuriamas naujas kintamasis, kuris filtruoja per per visus tasks ir sukuria nauja array, be istrintos reiksmes. (randa pagal id)
      setTasks(updatedTasks); //iskviecia setTasks funkcija ir paupdatina visu tasku array jau be istrinto kintamojo. setTasks formos komponente svarbu perduoti i Generated task komponenta
-     setUncompletedTasks(uncompletedTasks - 1); //oi delete, uncomplete task reiksme -1, nes nebera tasko
+     setUncompletedTasks(uncompletedTasks - 1); //po delete, uncomplete task reiksme -1, nes nebera tasko
   }
 
   //mark task as complete

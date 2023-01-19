@@ -4,6 +4,7 @@ const Cards = ({data}) => {
   return (
     <>
       <h1>Cards</h1>
+
       <ul>
         {
           data.map(card => {
@@ -16,6 +17,7 @@ const Cards = ({data}) => {
             )
           })
         }
+        
         {/* <li><Link to="/cards/card/1">Card1</Link></li>
         <li><Link to="/cards/card/2">Card2</Link></li>
         <li><Link to="/cards/card/3">Card3</Link></li>

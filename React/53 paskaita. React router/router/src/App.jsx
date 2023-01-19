@@ -43,25 +43,39 @@ const App = () => {
         </nav>
       </header>
       <hr />
+
       <Routes>
-        <Route path="/" element={
-          <Home />
-        }/>
-        <Route path="/register" element={
-          <UserRegistration />
-        }/>
+
+        <Route path="/" element= {<Home />}/>
+
+        <Route path="/register" element={<UserRegistration />}/>
+
         <Route path="/login" element={<UserLogIn />}/>
+
+
         <Route path="/cards" element={
           <Cards
             data={cards}
           />
         }/>
+
+  
         <Route path="/cards/card/:id" element={
           <Card 
             data={cards}
           />
         }/>
+
+
+        <Route path="/*" element={
+          <>
+            <h1>404 not found</h1>
+          </>
+        }/>
+
+
       </Routes>
+
       <hr />
       <footer>
         <h1>Hey yo, foot here</h1>

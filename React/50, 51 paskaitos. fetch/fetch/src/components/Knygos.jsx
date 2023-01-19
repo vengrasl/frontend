@@ -1,16 +1,14 @@
 import { useState } from "react";
 
 
-const Knygos = (props) => {
+const Knygos = ({ knygos }) => {
                                                       // DELETE
   //state, kuris ziuri ar knyga istrinta
   const [isDeleted, setIsDeleted] = useState(false);
   
 
-
-
   const handleDelete = async () => {
-    await fetch(`http://localhost:5000/knygos/${props.knygos.id}`, {
+    await fetch(`http://localhost:5000/knygos/${knygos.id}`, {
       method: 'DELETE'
     });
     //paspaudus delete mygtuka, isDeleted state keiciasi i true, ir is data.json issitrina info
@@ -24,13 +22,12 @@ const Knygos = (props) => {
 
   return ( 
     <div className="knygos">
-      <h1 className="pavadinimas">{props.pavadinimas}</h1>
-      <img className="nuotrauka" src={props.nuotrauka} alt={props.pavadinimas}/>
+      <h1 className="pavadinimas">{knygos.title}</h1>
+      <img className="nuotrauka" src={knygos.image} alt="knygos-nuotrauka"/>
       <div className="knygosInformacija">
-        <p className="autorius">Knygos autorius: {props.autorius}</p>
-        <p className="aprasymas">Knygos aprašymas: {props.aprasymas}</p>
-        <p className="puslapiuSkaicius">Puslapių skaičius: {props.puslapiuSkaicius}</p>
-        <p className="arPerskaityta">{props.arPerskaityta ? "Šią knygą perskaičiau" : "Šios knygos neperskaičiau"}</p>
+        <p className="autorius">Knygos autorius: {knygos.author}</p>
+        <p className="aprasymas">Knygos aprašymas: {knygos.description}</p>
+        <p className="puslapiuSkaicius">Puslapių skaičius: {knygos.pages}</p>
         <button>Edit book info</button>
         <button onClick={handleDelete}>Delete book</button>
       </div>

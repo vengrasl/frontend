@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const SignIn = ({userStatusHandler}) => {
+const SignIn = ({userStatusHandler, userStatus}) => {
 
   const [userLogin, setUserLogin] = useState({
     username:'',
@@ -43,21 +43,23 @@ const SignIn = ({userStatusHandler}) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="text"
-          name="username"
-          value={userLogin.username}
-          onChange={handleUserInput}
-        />
-        <input 
-          type="password"
-          name="password"
-          value={userLogin.password}
-          onChange={handleUserInput}
-        />
-        <input type="submit" value="Log In" />
-      </form>
+      { !userStatus && 
+        <form onSubmit={handleSubmit}>
+          <input 
+            type="text"
+            name="username"
+            value={userLogin.username}
+            onChange={handleUserInput}
+          />
+          <input 
+            type="password"
+            name="password"
+            value={userLogin.password}
+            onChange={handleUserInput}
+          />
+          <input type="submit" value="Log In" />
+        </form>
+      }
     </>
    );
 }

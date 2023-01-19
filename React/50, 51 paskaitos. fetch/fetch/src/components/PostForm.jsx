@@ -25,16 +25,8 @@ const PostForm = () => {
       headers: {
         "Content-Type": "application/json"
       }
-    }).then(response => {
-        if(response.ok){
-          console.log('knyga prideta')
-        }
-        else{
-          console.log('nepavyko prideti knygos')
-        }
-    })
-  };
-
+    });
+  }
   return (
 
     <form className="addForm" onSubmit={handleSubmit}>
@@ -59,7 +51,7 @@ const PostForm = () => {
       </div>
 
       <div>
-        <label>Description:</label>
+        <label>Aprašymas:</label>
           <textarea
             name="description"
             value={formData.description}

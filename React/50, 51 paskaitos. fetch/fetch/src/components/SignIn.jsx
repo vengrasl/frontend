@@ -89,7 +89,7 @@ const SignIn = () => {
         </form>
         {invalidUsernameOrPassword && <p className="wrongFields">{invalidUsernameOrPassword}</p>}
         </div>
-        :  // kitu atveju pasisveikinti su prisijungusiu vartotoju pagal jo varda ir rodyti log out mygtuka
+        :  // kitu atveju pasisveikinti su prisijungusiu vartotoju pagal jo varda
           <div className='logOut'>
             <p>Welcome back {username}!</p> 
             <button className='logOffButton' onClick={logout}>Log out</button>

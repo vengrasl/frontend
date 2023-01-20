@@ -39,7 +39,7 @@ const App = () => {
           <Knygos
             key={item.id}
             knygos={item}
-            
+            setData={setData} 
           />
         ):
         <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="loading"/> }

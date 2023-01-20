@@ -12,7 +12,8 @@ header {
   margin-bottom: 30px;
 }
 main {
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .headerLogo{
   height: 150px;
@@ -24,7 +25,7 @@ main {
   justify-content: space-around;
 }
 .knygos {
-  width: 310px;
+  width: 304px;
   border: 2px solid black;
 }
 .pavadinimas{

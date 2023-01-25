@@ -9,7 +9,7 @@ const Registration = () => {
     email: '',
     password: '',
     passwordRepeat: '',
-    age: 0
+    age: ''
     })
 
     const funkcija = () => {
@@ -35,15 +35,15 @@ const Registration = () => {
       age: Yup.number()
       .integer('Age has to be a integer number.')
       .required('This field must be filled.')
-      .min(7, 'You have to be atleast 7 years old to register.')
+      .min(18, 'You have to be atleast 7 years old to register.')
       .max(120, "Please enter your real age.")
-      .positive('Age has to be a positive number.')
+      // .positive('Age has to be a positive number.')
       }); 
 
   return ( 
     <>
       <Formik
-        initialValues={values}
+        initialValues={values} //galima cia ranka israsyti visus values kaip tuscius stringus, tada nereikia useState (nebus nepanaudotas setValues)
         validationSchema={validationSchema}
 
         onSubmit= {(values, {resetForm} )=> {

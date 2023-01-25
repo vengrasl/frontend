@@ -40,8 +40,10 @@ const Knygos = ({ knygos, setData }) => {
       }
     });
     const jsonData = await response.json();
+    console.log(jsonData)
     setData(prevData => prevData.map(item => item.id === knygos.id ? jsonData : item)); //map per buvusia knygos info pagal id ir pakeisti ja nauja, jei ta info buvo keista
     setIsEditing(false); //isjungiam edit
+    console.log(updatedBook)
   }
 
   return (

@@ -8,6 +8,7 @@ const Nav = () => {
       <Link to="/add">Add</Link>
       <Link to="/edit">Edit</Link>
     </nav>
+    <hr />
     </>
    );
 }

@@ -2,8 +2,9 @@ import './App.css';
 import Home from './components/Home';
 import Add from './components/Add';
 import Edit from './components/Edit';
-import { Route, Routes } from 'react-router-dom'
 import Nav from './Nav';
+import { Route, Routes } from 'react-router-dom'
+
 
 
 const App = () => {

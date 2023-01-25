@@ -16,3 +16,59 @@ nav > a{
   font-size: 16px;
   color: black;
 }
+.tablediv{
+  display: flex;
+  justify-content: center;
+}
+table{
+  border-collapse: collapse;
+}
+td {
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+.updateDiv{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.singleUpdateDiv{
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.singleUpdateDiv > button {
+  width: 100%;
+}
+.editID{
+  text-align: center;
+}
+
+.modal{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  backdrop-filter: blur(100px);
+}
+
+.modal > form {
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.addForm{
+  margin: 0 auto; 
+  text-align: center;
+}

@@ -87,7 +87,8 @@ const SignIn = () => {
           />
           <input type="submit" value="Log In" className="logInButton"/>
         </form>
-        {invalidUsernameOrPassword && <p className="wrongFields">{invalidUsernameOrPassword}</p>}
+        {invalidUsernameOrPassword &&
+         <p className="wrongFields">{invalidUsernameOrPassword}</p>}
         </div>
         :  // kitu atveju pasisveikinti su prisijungusiu vartotoju pagal jo varda
           <div className='logOut'>

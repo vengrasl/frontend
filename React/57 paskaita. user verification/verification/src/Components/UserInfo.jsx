@@ -9,7 +9,7 @@ const UserInfo = () => {
 
 
   return ( 
-    <div style={{display: 'flex', justifyContent:'flex-end', alignitems: 'center'}}>
+    <div style={{display:'flex', justifyContent:'flex-end', alignitems:'center'}}>
     <img 
     src={loggedInUser.avatar} 
     alt='useravatar' />

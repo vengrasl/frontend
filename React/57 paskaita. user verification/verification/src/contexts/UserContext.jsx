@@ -6,6 +6,9 @@ const UserContext = createContext();
 const UserProvider = ({ children }) => {
   //kilnojami dalykai eina cia
   
+  const[loggedInUser, setLoggedinUser] = useState(); //kuris prisijunges
+
+
   const [users, setUsers] = useState([
     {
       id: 0,
@@ -31,7 +34,9 @@ const UserProvider = ({ children }) => {
   return (
     <UserContext.Provider
      value = {{
-      users
+      users,
+      loggedInUser,
+      setLoggedinUser
     }}
   >
       {children}

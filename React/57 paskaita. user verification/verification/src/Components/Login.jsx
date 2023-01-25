@@ -4,24 +4,27 @@ import { useState } from "react";
 
 const Login = () => {
 
-  const { users } = useContext(UserContext);
+  const { users, setLoggedinUser } = useContext(UserContext);
 
   const [formInputs, setFormInputs] = useState({
     userName: '',
     password: ''
   })
 
+  const [failedLogIn, setFailedLogin] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formInputs); //kokie laukai uzpildyti
     console.log(users) // visi kurti vartotojai
 
-    const loggedIn = users.find(user => user.userName === formInputs.userName && user.password === formInputs.password) //login
+    const loggedInUser = users.find(user => user.userName === formInputs.userName && user.password === formInputs.password) //prisijunges vartotojas pagal jo duomenis
 
-    console.log(loggedIn); //kuris vartotojas logged in
-
-
+    if(loggedInUser){ 
+      setLoggedinUser(loggedInUser) 
+    } else {
+      setFailedLogin(true)
+    }
   }
 
 
@@ -50,6 +53,9 @@ const Login = () => {
         </label>
 
         <input type="submit" />
+        {
+          failedLogIn && <span>Wrong username or password</span>
+        }
       </form>
     </div>
     </>

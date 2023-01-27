@@ -66,6 +66,10 @@ nav{
   align-items: center;
   width: 100%;
   height: 90vh;
+  flex-direction: column;
+}
+.formContainer > h1 {
+  padding-bottom: 40px;
 }
 .registerForm{
   display: flex;

@@ -10,10 +10,6 @@ const Login = () => {
 
   const { users, setLoggedInUser } = useContext(UserContext);
 
-  const [values, setValues] = useState({
-    username: '',
-    password: ''
-  });
 
   const handleSubmit = (values) => {
     // Find the user in the array that matches the entered username and password
@@ -39,7 +35,10 @@ const Login = () => {
       <div className="Login">
         <Formik
 
-          initialValues={values}
+          initialValues={{
+            username: '',
+            password: ''
+          }}
 
           validationSchema={validationSchema}
 

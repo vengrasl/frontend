@@ -2,21 +2,13 @@ import UserContext from "./UserContext";
 import { useContext } from "react";
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 
-  const { addNewUser, setLoggedInUser } = useContext(UserContext);
+  const { addNewUser, setLoggedInUser, users } = useContext(UserContext);
 
   const navigation = useNavigate();
-
-    const [values, setValues] = useState({
-      username: '',
-      password: '',
-      passwordRepeat: '',
-      avatar: '',
-      })
 
      const handleSubmit = (values) => {
       let newUser = {
@@ -35,7 +27,8 @@ const Register = () => {
         .min(5, "Username must be 5 characters or less.")
         .max(15, 'Username must be 15 characters or less.')
         .required('This field must be filled.')
-        .matches(/^[a-zA-Z0-9]+$/, "Username can only contain alphanumeric characters."),
+        .matches(/^[a-zA-Z0-9]+$/, "Username can only contain alphanumeric characters.")
+        .test('unique-username', 'Username already taken, please choose a different one', value => !users.find(user => user.username === value)),
       password: Yup.string()
         .min(8, 'Password must be at least 8 symbols length.')
         .max(20, 'Password must be 20 characters or less.')
@@ -50,7 +43,12 @@ const Register = () => {
     return ( 
       <>
         <Formik
-          initialValues={values} 
+          initialValues={{
+            username: '',
+            password: '',
+            passwordRepeat: '',
+            avatar: ''
+          }} 
           validationSchema={validationSchema}
   
           onSubmit= {(values, {resetForm} )=> {
@@ -62,6 +60,7 @@ const Register = () => {
           
           {({ errors, touched, values, setValues }) => (
           <div className='formContainer'>
+            <h1>Fill out form to register</h1>
             <Form className='registerForm'>
                <label>Username:
                   <Field 

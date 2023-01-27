@@ -1,22 +1,37 @@
 import UserContext from "../contexts/UserContext";
 import { useContext } from "react";
-
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const UserInfo = () => {
 
-  const {loggedInUser, setLoggedinUser} = useContext(UserContext);
+  const { loggedInUser, setLoggedInUser } = useContext(UserContext);
 
+  const navigation = useNavigate();
 
-  return ( 
-    <div style={{display:'flex', justifyContent:'flex-end', alignitems:'center'}}>
-    <img 
-    src={loggedInUser.avatar} 
-    alt='useravatar' />
-    <span>{loggedInUser.userName}</span>
-    <button onClick={() => setLoggedinUser(null)}>Logout</button> 
+  const logOutUser = () => {
+    setLoggedInUser(null);
+    navigation('/');
+  }
+
+  return (
+    <div style={{display:'flex', justifyContent:'space-between'}}>
+      <div style={{display:'flex', justifyContent:'flex-start'}}>
+        <Link to="/">HOME</Link>
+      </div>
+      <div style={{display:'flex', justifyContent:'flex-end'}}>
+        <Link to="/newPost">AddNewPost</Link>
+        <Link to="/user">
+          <img
+            src={loggedInUser.avatar}
+            alt="user avatar"
+            style={{width:'30px', height:'auto'}}
+          />
+          <span>{loggedInUser.userName}</span>
+        </Link>
+        <button onClick={() => logOutUser()}>LogOut</button>
+      </div>
     </div>
-   );
+  );
 }
  
 export default UserInfo;

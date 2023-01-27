@@ -1,65 +1,58 @@
-import { useContext } from "react";
 import UserContext from "../contexts/UserContext";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Login = () => {
-
-  const { users, setLoggedinUser } = useContext(UserContext);
+const LogIn = () => {
 
   const [formInputs, setFormInputs] = useState({
-    userName: '',
-    password: ''
-  })
+    userName : '',
+    password : ''
+  });
+  const [failedLogIn, setFailedLogIn] = useState(false);
 
-  const [failedLogIn, setFailedLogin] = useState(false)
+  const navigation = useNavigate();
+
+  const { users, setLoggedInUser } = useContext(UserContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formInputs); //kokie laukai uzpildyti
-    console.log(users) // visi kurti vartotojai
 
-    const loggedInUser = users.find(user => user.userName === formInputs.userName && user.password === formInputs.password) //prisijunges vartotojas pagal jo duomenis
+    const loggedInUser = users.find(user => user.userName === formInputs.userName && user.password === formInputs.password);
 
-    if(loggedInUser){ 
-      setLoggedinUser(loggedInUser) 
+    if(loggedInUser){
+      setLoggedInUser(loggedInUser);
+      navigation('/');
     } else {
-      setFailedLogin(true)
+      setFailedLogIn(true);
     }
   }
 
-
-
-
-  return ( 
+  return (
     <>
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Username:
-          <input 
-          type="text"
-          name='userName'
-          value={formInputs.userName}
-          onChange={(e)=>setFormInputs({...formInputs, userName:e.target.value})}
-          />
-        </label>
-        <label>
-          Password:
-          <input type="password"
-          name='password'
-          value={formInputs.password}
-          onChange={(e)=>setFormInputs({...formInputs, password:e.target.value})}
-          />
-        </label>
-
-        <input type="submit" />
-        {
-          failedLogIn && <span>Wrong username or password</span>
-        }
-      </form>
-    </div>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <label>
+            UserName:
+            <input type="text" name="userName"
+              value={formInputs.userName}
+              onChange={(e)=>setFormInputs({...formInputs, userName:e.target.value})}
+            />
+          </label>
+          <label>
+            Password:
+            <input type="password" name="password"
+              value={formInputs.password}
+              onChange={(e)=>setFormInputs({...formInputs, password:e.target.value})}
+            />
+          </label>
+          <input type="submit" value="Log In" />
+          {
+            failedLogIn && <span>Wrong log in info</span>
+          }
+        </form>
+      </div>
     </>
-   );
+  );
 }
  
-export default Login;
+export default LogIn;

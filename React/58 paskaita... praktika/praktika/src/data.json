@@ -1,0 +1,27 @@
+{
+  "meals": [
+    {
+      "id": 1,
+      "image": "",
+      "title": "",
+      "description": ""
+    }
+  ], 
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "12345",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "role": "admin",
+      "isBanned": false
+    },{
+      "id": 2,
+      "username": "lukas",
+      "password": "123",
+      "avatar": "https://e7.pngegg.com/pngimages/348/800/png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child.png",
+      "role": "user",
+      "isBanned": false
+    }
+  ]
+}

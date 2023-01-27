@@ -16,7 +16,6 @@ const Login = () => {
   });
 
   const handleSubmit = (values) => {
-    console.log(users)
     // Find the user in the array that matches the entered username and password
     const user = users.find(user => user.username === values.username && user.password === values.password);
     if (user) {

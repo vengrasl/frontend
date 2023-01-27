@@ -6,12 +6,8 @@ const UserInfo = () => {
   const { loggedInUser, setLoggedInUser } = useContext(UserContext);
 
   return (
-    <div style={{display:'flex', justifyContent:'flex-end'}}>
-      <img
-        src={loggedInUser.avatar}
-        alt="user avatar"
-        style={{width:'30px', height:'auto'}}
-      />
+    <div className='userInformation'>
+      <img className='userImage' src={loggedInUser.avatar} alt="user avatar"/>
       <span>{loggedInUser.username}</span>
       <button onClick={() => setLoggedInUser(null)}>LogOut</button>
     </div>

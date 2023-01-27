@@ -2,6 +2,7 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { useContext, useState } from "react";
 import UserContext from './UserContext';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -86,8 +87,13 @@ const Login = () => {
             </Form>
           )}
         </Formik>
-        <br />
         
+          <div className='failedLogin'>
+            {failedLogIn && <p>Indavild username or password</p>}
+          </div>
+      
+        
+          <Link to='/register'><div className='register'><p>Don't have an account? Click here to register.</p></div></Link>
       </div>
     </>
   );

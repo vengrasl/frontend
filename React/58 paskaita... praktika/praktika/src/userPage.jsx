@@ -5,7 +5,7 @@ const UserPage = () => {
   return ( 
     <section className="userPosts">
       <h1>My posts</h1>
-      <Link to='/addPost'><h1>Add a post</h1></Link>
+      <Link to='/addPost'><h1 className="AddAPost">Add a post</h1></Link>
       <div className="allPosts">
         <UserPosts/>
       </div> 

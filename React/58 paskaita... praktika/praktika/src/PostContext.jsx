@@ -23,12 +23,21 @@ const [posts, setPosts] = useState([]);
     const uptatedData = await res.json();
     setPosts([...posts, uptatedData]);
   }
+
+  const deletePost = async (id) => {
+    await fetch(`http://localhost:5000/meals/${id}`, {
+      method: 'DELETE'
+    });
+    setPosts(posts.filter(post => post.id !== id))
+  }
+
     
   return (
     <PostContext.Provider
       value={{
         posts,
-        addNewPost
+        addNewPost,
+        deletePost
       }}
     >
       {children}

@@ -1,9 +1,12 @@
 import UserContext from "./UserContext";
+import PostContext from "./PostContext";
 import { useContext } from "react";
 
 const Post = ({data}) => {
   
 const { users, loggedInUser } = useContext(UserContext);
+
+const { deletePost } = useContext(PostContext);
 
 //randam kuris postas kuriam vartotojui priklauso prilyginant vartotojo id ir posto savininko id
 const postOwner = users.find(user => user.id === data.userId);
@@ -27,7 +30,11 @@ const postOwner = users.find(user => user.id === data.userId);
           <div>
 
           {//jei vartotojas prisijunges ir vartotojo id sutampa su posto savininko id, atsiranda edit galimybe
-            loggedInUser && loggedInUser.id === postOwner.id && 'edit'
+            loggedInUser && loggedInUser.id === postOwner.id &&
+            <>
+              <button onClick={()=> deletePost(data.id)}>Delete</button>
+              <button>Edit</button>
+            </>
           }
             
           </div>

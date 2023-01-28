@@ -37,8 +37,6 @@ const AddPost = () => {
 
   return ( 
     <>
-    add a post
-
     <Formik
       initialValues={{
         title: '',

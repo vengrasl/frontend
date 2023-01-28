@@ -8,7 +8,7 @@ const Posts = () => {
   const { posts } = useContext(PostContext)
 
   return ( 
-    <>
+    <section className="allPosts">
     
     {
       posts.map(post =>
@@ -18,7 +18,7 @@ const Posts = () => {
           />
         )
     }
-    </>
+    </section>
    );
 }
  

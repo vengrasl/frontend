@@ -15,6 +15,10 @@ const UserInfo = () => {
 
   return (
     <div className='userInformation'>
+      {
+        loggedInUser.role === 'admin' && 
+        <Link to='/manageUsers'><p>Manage users</p></Link>
+      }
       <Link to='/userPage'><p>My posts</p></Link>
       <img className='userImage' src={loggedInUser.avatar} alt="user avatar"/>
       <span>{loggedInUser.username}</span>

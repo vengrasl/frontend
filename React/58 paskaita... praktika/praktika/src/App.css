@@ -111,7 +111,7 @@ nav{
   flex-direction: column;
   align-items: center;
 
-  width: 300px;
+  width: 100%;
 }
 .mealImage{
   width: 100%;
@@ -119,6 +119,7 @@ nav{
 }
 .mealDescription {
   max-height: 100px;
+  width: 100%;
   overflow: scroll;
   overflow-x: hidden;
 }

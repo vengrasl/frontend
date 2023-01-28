@@ -5,7 +5,14 @@
       "userId": 2,
       "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
       "title": "Patiekalas",
-      "description": "Gardu, viska. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "description": "Gardu, viska."
+    },
+    {
+      "id": 2,
+      "userId": 1674900220728,
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/b77b162/2147483647/strip/true/crop/1200x800+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa4%2F21%2F0ed606f643208c461fc2ec038288%2Fconfessions-afotogirl-adobo-beef-tacos-111-uton.jpg",
+      "title": "Patiekalas 2",
+      "description": "Skanu."
     }
   ],
   "users": [
@@ -22,6 +29,15 @@
       "username": "lukas",
       "password": "123",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJsOuH-z26Cv7S0l25jNnHrnXsQDxQmRWhA&usqp=CAU",
+      "role": "user",
+      "isBanned": false
+    },
+    {
+      "username": "jonas",
+      "password": "12345678",
+      "passwordRepeat": "12345678",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaG-zRvboWmtcsDkkQN265IJXz9T_AIUwWgA&usqp=CAU",
+      "id": 1674900220728,
       "role": "user",
       "isBanned": false
     }

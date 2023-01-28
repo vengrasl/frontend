@@ -55,15 +55,15 @@ const Login = () => {
                   className="loginFieldInput"
                   type="text"
                   name="username"
-                  placeholder="username"
+                  placeholder={
+                    errors.username && touched.username ? 
+                      errors.username.toString()
+                      : 'Enter your username'
+                    }
                   value={values.username} 
                   onChange={(e)=>setValues({...values, username:e.target.value})}
                 />
-                {
-                  errors.username && touched.username ? 
-                    <p>{errors.username}</p>
-                    : null
-                  }
+                
               </div>
 
               <div className='loginField'>
@@ -71,16 +71,15 @@ const Login = () => {
                   className="loginFieldInput"
                   type="password"
                   name="password"
-                  placeholder="password"
+                  placeholder={errors.password && touched.password ? 
+                                errors.password.toString()
+                                : 'Enter your password'
+                    }
                   value={values.password} 
                   onChange={(e)=>setValues({...values, password:e.target.value})}
                 />
-                {
-                  errors.password && touched.password ? 
-                    <p>{errors.password}</p>
-                    : null
-                  }
                 </div> 
+                
               <button className='loginButton' type="submit">Log In</button>
             </Form>
           )}

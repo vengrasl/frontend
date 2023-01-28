@@ -2,7 +2,7 @@ import PostContext from "./PostContext";
 import { useContext } from "react";
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 
 
@@ -12,12 +12,15 @@ const EditPostForm = () => {
 
   const { id } = useParams();
 
+  const navigate = useNavigate();
+
   const currentPost = posts.find(post => post.id.toString() === id)
 
   console.log(currentPost)
 
   const handleSubmit = (values) => {
     updatePost(id, values);
+    navigate('/')
   }
 
 

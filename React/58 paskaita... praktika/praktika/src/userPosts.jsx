@@ -1,7 +1,6 @@
 import Post from "./Post";
 import PostContext from "./PostContext";
 import UserContext from "./UserContext";
-import { useState } from "react";
 import { useContext } from "react";
 
 const UserPosts = () => {
@@ -9,8 +8,6 @@ const UserPosts = () => {
   const { loggedInUser } = useContext(UserContext)
   const { posts } = useContext(PostContext)
 
-  console.log(posts)
-  console.log(loggedInUser)
 
   return ( 
     <>

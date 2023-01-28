@@ -7,7 +7,6 @@ const { users, loggedInUser } = useContext(UserContext);
 
 //randam kuris postas kuriam vartotojui priklauso prilyginant vartotojo id ir posto savininko id
 const postOwner = users.find(user => user.id === data.userId);
-console.log(postOwner)
 
 
   return ( 

@@ -1,6 +1,13 @@
+import Posts from "./Posts";
+
 const Main = () => {
   return ( 
-    <>Main</>
+    <>
+    Main
+    
+    <Posts />
+    
+    </>
    );
 }
  

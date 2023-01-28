@@ -12,7 +12,7 @@ const Register = () => {
 
      const handleSubmit = (values) => {
       let newUser = {
-        ...values, //paims is values state
+        ...values, //paims is values
         id: Date.now(),
         role: 'user',
         isBanned: false

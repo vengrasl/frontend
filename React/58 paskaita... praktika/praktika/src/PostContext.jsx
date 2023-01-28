@@ -31,13 +31,23 @@ const [posts, setPosts] = useState([]);
     setPosts(posts.filter(post => post.id !== id))
   }
 
+  const updatePost = async (id, updatedPost) => {
+    await fetch(`http://localhost:5000/meals/${id}`, {
+      method: 'PATCH',
+      body: JSON.stringify(updatedPost),
+      headers: { 'Content-Type': 'application/json' }
+    });
+    setPosts(posts.map(post => post.id.toString() === id ? { ...post, ...updatedPost } : post));
+  }
+
     
   return (
     <PostContext.Provider
       value={{
         posts,
         addNewPost,
-        deletePost
+        deletePost,
+        updatePost
       }}
     >
       {children}

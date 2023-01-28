@@ -1,6 +1,8 @@
 import UserContext from "./UserContext";
 import PostContext from "./PostContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
+
 
 const Post = ({data}) => {
   
@@ -33,7 +35,9 @@ const postOwner = users.find(user => user.id === data.userId);
             loggedInUser && loggedInUser.id === postOwner.id &&
             <>
               <button onClick={()=> deletePost(data.id)}>Delete</button>
-              <button>Edit</button>
+              <Link to={`/editPost/${data.id}`}>
+                <button> Edit</button>
+              </Link>
             </>
           }
             

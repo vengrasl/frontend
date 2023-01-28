@@ -28,7 +28,7 @@ console.log(postOwner)
         <p className="mealDescription">{data.description}</p>
         <div>
 
-        {
+        {//jei vartotojas prisijunges ir vartotojo id sutampa su posto savininko id, atsiranda edit galimybe
           loggedInUser && loggedInUser.id === postOwner.id && 'edit'
         }
           

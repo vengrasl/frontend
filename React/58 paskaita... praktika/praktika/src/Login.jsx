@@ -3,12 +3,15 @@ import * as Yup from 'yup';
 import { useContext, useState } from "react";
 import UserContext from './UserContext';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
   const [failedLogIn, setFailedLogIn] = useState(false);
 
   const { users, setLoggedInUser } = useContext(UserContext);
+
+  const navigate =  useNavigate();
 
 
   const handleSubmit = (values) => {
@@ -17,6 +20,7 @@ const Login = () => {
     if (user) {
       setLoggedInUser(user)
       console.log('Logged in successfully')
+      navigate('/')
     } else {
       setFailedLogIn(true);
       console.log('Login failed')

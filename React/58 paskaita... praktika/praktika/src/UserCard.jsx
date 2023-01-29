@@ -1,8 +1,12 @@
-const UserCard = ({data}) => {
+const UserCard = ({data, banOrUnbanUser}) => {
   return ( 
-    <div>
+    <div className="userCard">
+      <h1>{data.username}</h1>
       <img src={data.avatar} alt="userLogo" />
-      <p>{data.username}</p>
+      
+      <button onClick={() => banOrUnbanUser(data.id)}>
+        {data.isBanned ? 'UnBan' : 'Ban'}
+      </button>
     </div>
    );
 }

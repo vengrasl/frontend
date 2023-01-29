@@ -4,23 +4,27 @@ import UserCard from "./UserCard";
 
 const ManageUsers = () => {
 
-  const { users } = useContext(UserContext);
+  const { users, banOrUnbanUser } = useContext(UserContext);
 
   const nonAdminUsers = users.filter(user => user.role !== 'admin');
 
+  //2:07
+
   return ( 
-    <>
+    <section className="manageUsers">
+      <h1>All users</h1>
     
       {
         nonAdminUsers.map(user => 
           <UserCard
             key={user.id} 
             data={user}
+            banOrUnbanUser={banOrUnbanUser}
           />
         )
       }
 
-    </>
+    </section>
    );
 }
  

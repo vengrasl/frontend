@@ -155,3 +155,22 @@ nav{
 .AddAPost{
   padding-left: 20px;
 }
+.manageUsers{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.userCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+.userCard > img {
+  width: 200px;
+  height: 200px;
+}
+.manageUsers > h1 {
+  text-align: center;
+  font-size: 30px;
+}

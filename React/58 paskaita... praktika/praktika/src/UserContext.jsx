@@ -34,6 +34,26 @@ const UserProvider = ({ children }) => {
         setUsers([...users, data.newUser])
       })
   }
+
+  
+  const banOrUnbanUser = async (id) => {
+    console.log('ivykis')
+
+    //kuri user update
+    const userToUpdate = users.find(user => user.id.toString() === id.toString());
+  
+    userToUpdate.isBanned = !userToUpdate.isBanned;
+  
+    const updatedUser = await fetch(`http://localhost:5000/users/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(userToUpdate)
+    })
+      .then(res => res.json())
+      .then(data => data);
+  
+    setUsers(users.map(user => user.id.toString() === id.toString() ? { ...user, ...updatedUser } : user));
+  };
   
 
 
@@ -43,7 +63,8 @@ const UserProvider = ({ children }) => {
       users,
       loggedInUser,
       setLoggedInUser,
-      addNewUser
+      addNewUser,
+      banOrUnbanUser
     }}
     >
       {children}

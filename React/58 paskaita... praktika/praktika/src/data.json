@@ -30,7 +30,7 @@
       "password": "123",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJsOuH-z26Cv7S0l25jNnHrnXsQDxQmRWhA&usqp=CAU",
       "role": "user",
-      "isBanned": false
+      "isBanned": true
     },
     {
       "username": "jonas",

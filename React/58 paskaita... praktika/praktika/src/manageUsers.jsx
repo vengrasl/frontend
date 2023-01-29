@@ -8,8 +8,6 @@ const ManageUsers = () => {
 
   const nonAdminUsers = users.filter(user => user.role !== 'admin');
 
-  //2:07
-
   return ( 
     <section className="manageUsers">
       <h1>All users</h1>

@@ -95,13 +95,12 @@ const Login = () => {
           )}
         </Formik>
         
-          <div className='failedLogin'>
-            {failedLogIn && <p>Indavild username or password</p>}
-          </div>
-
+        { (userIsBanned || failedLogIn) &&
           <div className='failedLogin'>
             {userIsBanned && <p>You are banned</p>}
-          </div>
+            {failedLogIn && <p>Invalid username or password</p>}
+         </div>
+        }
       
         
           <Link to='/register'><div className='register'><p>Don't have an account? Click here to register.</p></div></Link>

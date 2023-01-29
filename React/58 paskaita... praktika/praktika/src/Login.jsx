@@ -20,16 +20,16 @@ const Login = () => {
 
     const loggedInUser  = users.find(user => user.username === values.username && user.password === values.password);
 
-    //jei randamas vartotojas ir jis nera banintas, prijungiam
-    if (loggedInUser && !loggedInUser.isBanned) {
+    //jei nerandamas vartotojas, fail to login (invalid username or password)
+    if (!loggedInUser) {
+      setFailedLogIn(true);
+     //jei randamas vartotojas, bet jis banned, (you are banned) 
+    } else if (loggedInUser.isBanned){
+      setUserIsBanned(true);
+      // kitu atveju prijungiam
+    } else {
       setLoggedInUser(loggedInUser)
       navigate('/')
-    
-      //jei randamas vartotojas ir jis yra banintas, gaus zinute ban
-    } else if (loggedInUser && loggedInUser.isBanned){
-      setUserIsBanned(true);
-    } else {
-      setFailedLogIn(true);
     }
   }
 

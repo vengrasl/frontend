@@ -8,21 +8,28 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
   const [failedLogIn, setFailedLogIn] = useState(false);
+  const [userIsBanned, setUserIsBanned] = useState(false);
 
   const { users, setLoggedInUser } = useContext(UserContext);
+  
 
   const navigate =  useNavigate();
 
 
   const handleSubmit = (values) => {
-    const user = users.find(user => user.username === values.username && user.password === values.password);
-    if (user) {
-      setLoggedInUser(user)
-      console.log('Logged in successfully')
+
+    const loggedInUser  = users.find(user => user.username === values.username && user.password === values.password);
+
+    //jei randamas vartotojas ir jis nera banintas, prijungiam
+    if (loggedInUser && !loggedInUser.isBanned) {
+      setLoggedInUser(loggedInUser)
       navigate('/')
+    
+      //jei randamas vartotojas ir jis yra banintas, gaus zinute ban
+    } else if (loggedInUser && loggedInUser.isBanned){
+      setUserIsBanned(true);
     } else {
       setFailedLogIn(true);
-      console.log('Login failed')
     }
   }
 
@@ -90,6 +97,10 @@ const Login = () => {
         
           <div className='failedLogin'>
             {failedLogIn && <p>Indavild username or password</p>}
+          </div>
+
+          <div className='failedLogin'>
+            {userIsBanned && <p>You are banned</p>}
           </div>
       
         

@@ -1,4 +1,4 @@
-import PostContext from "./PostContext";
+import PostContext from "../context/PostContext";
 import { useContext } from "react";
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';

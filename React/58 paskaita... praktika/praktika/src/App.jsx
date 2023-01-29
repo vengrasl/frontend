@@ -1,12 +1,12 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import Header from './Header';
-import Register from './Register'
-import Main from './Main';
-import UserPage from './userPage';
-import AddPost from './AddPost';
-import EditPostForm from './EditPostForm';
-import ManageUsers from './manageUsers';
+import Header from './components/Header';
+import Register from './components/Register'
+import Main from './components/Main';
+import UserPage from './components/userPage';
+import AddPost from './components/AddPost';
+import EditPostForm from './components/EditPostForm';
+import ManageUsers from './components/manageUsers';
 
 
 const App = () => {

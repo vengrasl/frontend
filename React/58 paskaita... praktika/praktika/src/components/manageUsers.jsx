@@ -1,4 +1,4 @@
-import UserContext from "./UserContext";
+import UserContext from "../context/UserContext";
 import { useContext } from "react";
 import UserCard from "./UserCard";
 

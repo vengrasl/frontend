@@ -1,6 +1,6 @@
 import Login from './Login';
 import UserInfo from './UserInfo';
-import UserContext from './UserContext';
+import UserContext from "../context/UserContext";
 import { useContext } from "react";
 import { Link } from 'react-router-dom';
 

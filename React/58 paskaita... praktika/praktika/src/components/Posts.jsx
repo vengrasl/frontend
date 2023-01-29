@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import PostContext from "./PostContext";
+import PostContext from "../context/PostContext";
 import Post from "./Post";
-import UserContext from "./UserContext";
+import UserContext from "../context/UserContext";
 
 
 const Posts = () => {
@@ -9,10 +9,13 @@ const Posts = () => {
   const { users } = useContext(UserContext)
   const { posts } = useContext(PostContext)
 
-  const bannedUsers = users.map(user => user.isBanned && user.id);
-  console.log(bannedUsers)
+  const bannedUsers = users.map(user => user.isBanned && user.id).filter(item => item !== false);
 
-  const availablePosts = posts.filter(post => !bannedUsers.includes(post.userId))
+  console.log(bannedUsers);
+
+  const availablePosts = posts.filter(post => !bannedUsers.includes(post.userId));
+  
+  console.log(availablePosts)
 
   return ( 
     <section className="allPosts">

@@ -1,7 +1,7 @@
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { useContext, useState } from "react";
-import UserContext from './UserContext';
+import UserContext from '../context/UserContext';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 

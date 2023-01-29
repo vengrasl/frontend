@@ -47,6 +47,42 @@
       "id": 1674900220728,
       "role": "user",
       "isBanned": false
+    },
+    {
+      "username": "naujasUser",
+      "password": "12345678",
+      "passwordRepeat": "12345678",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jKNBTRs42LNJjjl_4Oa7ex-uxHq8Wz9028R_gKAe_g&s",
+      "id": 1675011414147,
+      "role": "user",
+      "isBanned": false
+    },
+    {
+      "username": "lukassss",
+      "password": "12345678",
+      "passwordRepeat": "12345678",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jKNBTRs42LNJjjl_4Oa7ex-uxHq8Wz9028R_gKAe_g&s",
+      "id": 1675012051656,
+      "role": "user",
+      "isBanned": false
+    },
+    {
+      "username": "lukasas",
+      "password": "12345678",
+      "passwordRepeat": "12345678",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jKNBTRs42LNJjjl_4Oa7ex-uxHq8Wz9028R_gKAe_g&s",
+      "id": 1675012958963,
+      "role": "user",
+      "isBanned": false
+    },
+    {
+      "username": "lukasasa",
+      "password": "12345678",
+      "passwordRepeat": "12345678",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1jKNBTRs42LNJjjl_4Oa7ex-uxHq8Wz9028R_gKAe_g&s",
+      "id": 1675013014248,
+      "role": "user",
+      "isBanned": false
     }
   ]
 }
